@@ -1,0 +1,70 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    min-height: 100%;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+.container {
+    display: grid;
+
+}
+.container-nisse{
+    display: flex;
+    justify-content: center;
+
+}
+
+body {
+    background: linear-gradient(45deg, lightgreen, rgb(2, 43, 2));
+    display: grid;
+    justify-citems: center;
+    padding: 20px;
+    display: grid;
+}
+
+/* Wrapper = centrerar och begränsar bredde */
+#todayLucka {    
+    width: 80%;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    justify-items: center;
+
+}
+
+/* Själva brevet */
+.nisseBrevet {
+    background-color: rgba(0, 0, 0, 0.383);
+    border-radius: 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    font-family: "Indie Flower", cursive;
+    color: white;
+    min-width: 70%;
+
+    
+    /* Gör att text aldrig sticker ut */
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+}
+
+h1, h2, h3 {
+    font-family: "Indie Flower", cursive;
+    font-weight: 400;
+    color: white;
+    margin-top: 0;
+    text-align: center;
+    }
+
+img{
+    width: 200px;
+    bottom: 20px;
+   
+}
+
+
