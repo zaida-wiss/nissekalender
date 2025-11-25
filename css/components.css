@@ -16,13 +16,13 @@ h3{
 }
 /* Nissebrevet */
 .nisseBrevet {
-    background-color: rgba(0, 0, 0, 0.383);
+    background-color: rgba(0, 0, 0, 0.84);
     border-radius: 20px;
     padding: 20px;
     display: flex;
     flex-direction: column;
     color: white;
-    min-width: 70%;
+    max-width: 70%;
     overflow-wrap: break-word;
     word-wrap: break-word;
     margin-bottom: 150px;
@@ -30,14 +30,14 @@ h3{
 
 /* Startskärmen */
 .start-screen, button{
-    background: rgba(0, 0, 0, 0.4);
+    background: rgba(0, 0, 0, 0.717);
     padding: 10px;
     border-radius: 20px;
     text-align: center;
     color: white;
     max-width: 600px;
     margin-top: 30px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.6);
     font-family: "schoolbell", cursive;
 }
 
@@ -77,9 +77,11 @@ font-family: "Indie Flower", cursive;
 background-color: rgba(0, 0, 0, 0.383);
 gap: 20px;
 padding: 10px;
+margin-top: 50px;;
+
 }
 .nisse-divider {
-    width: 70%;               /* gör den centrerad och responsiv */
+    width: 80%;               /* gör den centrerad och responsiv */
     margin: 2px auto 5px;   /* centrerar och ger luft */
     border: none;             /* ta bort standard-stil */
     border-top: 2px solid rgba(255, 255, 255, 0.7);  /* snygg linje */
