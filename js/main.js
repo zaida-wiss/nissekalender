@@ -1,6 +1,7 @@
 console.log("main.js laddas");
 
 import { nisseBrev } from "./nisseBrev.js";
+import { renderBrevet } from "./components/renderBrevet.js";
 
 let today = new Date().toLocaleDateString("sv-SE");
 today = "2025-12-02"; // testdatum
@@ -11,6 +12,7 @@ output.classList.add("nisseBrevet");
 
 const startScreen = document.getElementById("startScreen");
 const openBtn = document.getElementById("openLuckaBtn");
+
 
 openBtn.addEventListener("click", () => {  
     openBtn.textContent = "Nissen letar efter dagens brev...";
