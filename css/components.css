@@ -79,8 +79,8 @@ gap: 20px;
 padding: 10px;
 }
 .nisse-divider {
-    width: 60%;               /* gör den centrerad och responsiv */
-    margin: 2px auto 2px;   /* centrerar och ger luft */
+    width: 70%;               /* gör den centrerad och responsiv */
+    margin: 2px auto 5px;   /* centrerar och ger luft */
     border: none;             /* ta bort standard-stil */
     border-top: 2px solid rgba(255, 255, 255, 0.7);  /* snygg linje */
 }
