@@ -1,17 +1,63 @@
+/* Nissebrevet */
 .nisseBrevet {
-    background-color: rgba(0,0,0,0.3);
+    background-color: rgba(0, 0, 0, 0.383);
     border-radius: 20px;
     padding: 20px;
+    display: flex;
+    flex-direction: column;
+    font-family: "Indie Flower", cursive;
+    color: white;
+    min-width: 70%;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
 }
 
-.nisseBus {
-    background: rgba(255, 0, 0, 0.2);
-    padding: 20px;
+/* Startskärmen */
+.start-screen {
+    background: rgba(0, 0, 0, 0.4);
+    padding: 30px;
+    border-radius: 20px;
+    text-align: center;
+    color: white;
+    max-width: 600px;
+    margin-top: 30px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.4);
 }
 
-/* 
-.nisseUppdrag {}
-.nisseHjarteglitter {}
-.nisseRecept {}
-.nissePuzzle {} 
-*/
+/* Bilder i komponenter */
+img {
+    width: 200px;
+    bottom: 20px;
+}
+
+/* Knapp: öppna dagens lucka */
+.open-btn {
+    margin-top: 20px;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 12px;
+    background-color: #ff4d6d;
+    color: white;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: transform .2s ease, background-color .2s ease;
+}
+
+.open-btn:hover,
+.open-btn:focus {
+    background-color: #e63950;
+    transform: scale(1.05);
+}
+
+.open-btn:active {
+    transform: scale(0.98);
+}
+
+/* Rubriker i komponenter */
+h1, h2, h3 {
+    font-family: "Indie Flower", cursive;
+    font-weight: 400;
+    color: white;
+    margin-top: 0;
+    text-align: center;
+}

@@ -1,14 +1,24 @@
+/* --- Färgtema --- */
 :root {
-    --red: #ff4d6d;
-    --gold: #ffd26f;
-    --snow: #fafafa;
-    --nisse-pink:rgb(248, 213, 219);
-    --nisse-green:rgb(50, 136, 50);
-    --nisse-blue:rgb(16, 16, 73);
+    --nisse-red: #ff4d6d;
+    --nisse-red-dark: #e63950;
+    --nisse-snow: #ffffff;
+    --nisse-night: rgb(2, 43, 2);
 }
 
+/* Bakgrund */
 body {
-    font-family: "Indie Flower", cursive;
-    background: linear-gradient(45deg, lightgreen, rgb(2, 43, 2), darkblue);
+    background: linear-gradient(45deg, lightgreen, var(--nisse-night), darkblue);
+    font-family: 'Arial', sans-serif;
 }
 
+/* Fade animation */
+.fade-in {
+    animation: fadeIn 0.8s ease-out forwards;
+    opacity: 0;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
