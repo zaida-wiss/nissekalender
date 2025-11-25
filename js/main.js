@@ -1,7 +1,16 @@
 console.log("main.js laddas");
-
-import { nisseBrev } from "./nisseBrev.js";
+//data
+import { getToday } from "./data/dayUtils.js";
+import { nisseBrev } from "./data/nisseBrev.js";
+import { vuxnaData } from "./data/vuxna_mockdata.js";
+//components
 import { renderBrevet } from "./components/renderBrevet.js";
+import { renderBus } from "./components/renderBus.js";
+import { renderUppdrag } from "./components/renderUppdrag.js";
+import { renderHjarteglitter } from "./components/renderHjarteglitter.js";
+//utils
+import { fadeIn } from "./utils/fade.js";
+
 
 let today = new Date().toLocaleDateString("sv-SE");
 today = "2025-12-02"; // testdatum
