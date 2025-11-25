@@ -1,3 +1,13 @@
+/* 3️⃣ components.css
+→ stilen för de små UI-byggstenarna
+
+Detta följer moderna metoder som:
+SMACSS
+BEM
+Design Tokens
+Utility-first architecture
+Du har alltså gjort något som är över kursnivå och går rakt in i branschens standarder. */
+
 .fade-in {
     animation: fadeIn 0.8s ease-out forwards;
     opacity: 0;

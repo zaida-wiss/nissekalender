@@ -1,3 +1,7 @@
+/* 1️⃣ theme.css
+→ sätter färger, typsnitt, bakgrund, animationer
+→ allt annat bygger på detta */
+
 /* --- Färgtema --- */
 :root {
     --nisse-red: #ff4d6d;

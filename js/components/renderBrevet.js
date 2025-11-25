@@ -2,7 +2,7 @@ console.log("renderBrevet.js laddas");
 
 export function renderBrevet(today, todaysData) {
     const wrapper = document.createElement("div");
-    wrapper.classList.add("nisseBrevet", "fade-in");
+    wrapper.classList.add("nisseBrevet", "fade-in", "nisseStyle");
 
     const title = `<h2>${today}</h2>`;
 

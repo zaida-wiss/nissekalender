@@ -5,17 +5,17 @@
     padding: 20px;
     display: flex;
     flex-direction: column;
-    font-family: "Indie Flower", cursive;
     color: white;
     min-width: 70%;
     overflow-wrap: break-word;
     word-wrap: break-word;
+    margin-bottom: 150px;
 }
 
 /* Startskärmen */
 .start-screen {
     background: rgba(0, 0, 0, 0.4);
-    padding: 30px;
+    padding: 10px;
     border-radius: 20px;
     text-align: center;
     color: white;
@@ -54,10 +54,31 @@ img {
 }
 
 /* Rubriker i komponenter */
-h1, h2, h3 {
+h1, h2, h3, h4, p {
     font-family: "Indie Flower", cursive;
     font-weight: 400;
     color: white;
     margin-top: 0;
     text-align: center;
+}
+h3{
+    margin-top: 10px;
+    margin-bottom: 2px;
+    font-weight: 700;        /* gör rubriken FET */
+    text-transform: uppercase; /* gör ALLA bokstäver STORA */
+    
+}
+
+.nisseStyle {
+border-radius: 15px;
+font-family: "Indie Flower", cursive;
+background-color: rgba(0, 0, 0, 0.383);
+gap: 20px;
+padding: 10px;
+}
+.nisse-divider {
+    width: 60%;               /* gör den centrerad och responsiv */
+    margin: 10px auto 15px;   /* centrerar och ger luft */
+    border: none;             /* ta bort standard-stil */
+    border-top: 2px solid rgba(255, 255, 255, 0.7);  /* snygg linje */
 }
