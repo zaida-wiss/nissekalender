@@ -1,0 +1,10 @@
+.container {
+    display: grid;
+    justify-items: center;
+}
+
+#todayLucka {
+    display: none;
+    grid-template-columns: 1fr;
+    justify-items: center;
+}

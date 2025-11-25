@@ -5,7 +5,7 @@ export function renderUppdrag(data) {
     wrapper.classList.add("nisseUppdrag", "fade-in");
 
     wrapper.innerHTML = `
-        <h3>Dagens uppdrag 🎯</h3>
+        <h3>🎯 Dagens uppdrag 🎯</h3>
         <p>${data.uppdrag}</p>
     `;
 

@@ -5,7 +5,7 @@ export function renderHjarteglitter(data) {
     wrapper.classList.add("nisseHjarteglitter", "fade-in");
 
     wrapper.innerHTML = `
-        <h3>Dagens hjärteglitter 💖</h3>
+        <h3>💖 Dagens hjärteglitter 💖</h3>
         <p>${data.hjarteglitter}</p>
     `;
 

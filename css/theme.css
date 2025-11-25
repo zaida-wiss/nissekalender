@@ -1,0 +1,14 @@
+:root {
+    --red: #ff4d6d;
+    --gold: #ffd26f;
+    --snow: #fafafa;
+    --nisse-pink:rgb(248, 213, 219);
+    --nisse-green:rgb(50, 136, 50);
+    --nisse-blue:rgb(16, 16, 73);
+}
+
+body {
+    font-family: "Indie Flower", cursive;
+    background: linear-gradient(45deg, lightgreen, rgb(2, 43, 2), darkblue);
+}
+
