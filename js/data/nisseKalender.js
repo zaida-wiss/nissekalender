@@ -1,4 +1,4 @@
-const nisseKalender = [
+export const nisseKalender = [
   {
     datum: "2025-11-25",
     bus: "Nissen har lagt alla gosedjuren i en ring som om de har möte.",
