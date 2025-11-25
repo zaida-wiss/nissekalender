@@ -1,3 +1,19 @@
+/* Rubriker i komponenter */
+h1, h2, h3, h4, p {
+    font-family: "Indie Flower", cursive;
+    font-weight: 400;
+    color: white;
+    margin-top: 0;
+    margin-bottom: 2px;
+    text-align: center;
+}
+h3{
+    margin-top: 10px;
+    margin-bottom: 2px;
+    font-weight: 700;        /* gör rubriken FET */
+    text-transform: uppercase; /* gör ALLA bokstäver STORA */
+    
+}
 /* Nissebrevet */
 .nisseBrevet {
     background-color: rgba(0, 0, 0, 0.383);
@@ -13,7 +29,7 @@
 }
 
 /* Startskärmen */
-.start-screen {
+.start-screen, button{
     background: rgba(0, 0, 0, 0.4);
     padding: 10px;
     border-radius: 20px;
@@ -22,6 +38,7 @@
     max-width: 600px;
     margin-top: 30px;
     box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+    font-family: "schoolbell", cursive;
 }
 
 /* Bilder i komponenter */
@@ -53,22 +70,6 @@ img {
     transform: scale(0.98);
 }
 
-/* Rubriker i komponenter */
-h1, h2, h3, h4, p {
-    font-family: "Indie Flower", cursive;
-    font-weight: 400;
-    color: white;
-    margin-top: 0;
-    margin-bottom: 2px;
-    text-align: center;
-}
-h3{
-    margin-top: 10px;
-    margin-bottom: 2px;
-    font-weight: 700;        /* gör rubriken FET */
-    text-transform: uppercase; /* gör ALLA bokstäver STORA */
-    
-}
 
 .nisseStyle {
 border-radius: 15px;
@@ -79,7 +80,7 @@ padding: 10px;
 }
 .nisse-divider {
     width: 60%;               /* gör den centrerad och responsiv */
-    margin: 10px auto 15px;   /* centrerar och ger luft */
+    margin: 2px auto 2px;   /* centrerar och ger luft */
     border: none;             /* ta bort standard-stil */
     border-top: 2px solid rgba(255, 255, 255, 0.7);  /* snygg linje */
 }
