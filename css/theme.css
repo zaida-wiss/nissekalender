@@ -12,7 +12,7 @@
 
 /* Bakgrund */
 body {
-    background: linear-gradient(45deg, lightgreen, var(--nisse-night), darkblue);
+    background: linear-gradient(45deg, lightgreen, var(--nisse-night), darkgreen);
     font-family: 'Arial', sans-serif;
 }
 
