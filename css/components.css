@@ -16,7 +16,7 @@ h3{
 }
 /* Nissebrevet */
 .nisseBrevet {
-    background-color: rgba(0, 0, 0, 0.84);
+    background-color: rgba(0, 0, 0, 0.668);
     border-radius: 20px;
     padding: 20px;
     display: flex;
@@ -53,17 +53,25 @@ img {
     padding: 12px 20px;
     border: none;
     border-radius: 12px;
-    background-color: #ff4d6d;
+    background-color: #480b16;
     color: white;
     font-size: 1.2rem;
     cursor: pointer;
+        /* Lägger till tydlig kontrast mot bakgrundsbild */
+    backdrop-filter: brightness(1.2);
+    box-shadow: 0 0 6px rgba(0,0,0,0.6);
+    border: 2px solid rgba(255,255,255,0.15);
+
     transition: transform .2s ease, background-color .2s ease;
 }
 
 .open-btn:hover,
 .open-btn:focus {
-    background-color: #e63950;
+    background-color: #450810;
     transform: scale(1.05);
+}
+.open-btn:focus-visible {
+    outline: 3px solid #ffd07a;
 }
 
 .open-btn:active {
@@ -74,7 +82,7 @@ img {
 .nisseStyle {
 border-radius: 15px;
 font-family: "Indie Flower", cursive;
-background-color: rgba(0, 0, 0, 0.383);
+background-color: rgba(0, 0, 0, 0.687);
 gap: 20px;
 padding: 10px;
 margin-top: 50px;;

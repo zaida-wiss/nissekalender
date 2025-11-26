@@ -17,7 +17,7 @@ export function renderBrevet(today, todaysData) {
         content = `
             ${title}
             <p>${todaysData.brev}</p>
-            <img src="./bilder/Glad_tomten_på_beige_bakgrund-removebg-preview.png" alt="Glad nisse">
+            <img src="./bilder/nissarna.webp" alt="Glada nissar">
         `;
     }
 
