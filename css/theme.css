@@ -4,11 +4,36 @@
 
 /* --- Färgtema --- */
 :root {
-    --nisse-red: #ff4d6d;
-    --nisse-red-dark: #e63950;
-    --nisse-snow: #ffffff;
-    --nisse-night: rgb(2, 43, 2);
+    /* 🎨 Färgtema – komponentvänligt */
+    --color-primary: #480b16;
+    --color-secondary: rgba(197, 87, 87, 0.15);
+    --color-text: #ffffff;
+    --color-accent: #ffd07a;
+    --color-bg: rgba(0, 0, 0, 0.65);
+    --color-box-shadow: 0 0 6px rgba(0,0,0,0.6);
+    --color-surface: rgba(255, 255, 255, 0.1);
+
+    /* 📐 Radius */
+    --radius-sm: 6px;
+    --radius-md: 12px;
+    --radius-lg: 20px;
+
+    /* 🔢 Spacing */
+    --space-sm: 8px;
+    --space-md: 16px;
+    --space-lg: 32px;
 }
+
+[data-theme="red"] {
+    --color-primary: #480b16;
+    --color-secondary: rgba(197, 87, 87, 0.15);
+    --color-bg: rgba(0, 0, 0, 0.65);
+    --color-box-shadow: 0 0 6px rgba(0,0,0,0.6);
+    --color-surface: rgba(255, 255, 255, 0.1);
+    --color-text: #ffffff;
+    --color-accent: #ffd07a;
+}
+
 
 /* Bakgrund */
 body {
