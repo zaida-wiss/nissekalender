@@ -47,7 +47,7 @@ setTimeout(() => {
 startScreen.style.display = "none";
 todayLucka.style.display = "grid";
 renderToday();
-}, 800);
+}, 1000);
 });
 
 
@@ -75,6 +75,6 @@ if (todaysExtra.recept) todayLucka.appendChild(renderRecept(todaysExtra));
 if (todaysExtra.pussel) todayLucka.appendChild(renderPuzzle(todaysExtra));
 }
 
-
 fadeIn(todayLucka);
 }
+
