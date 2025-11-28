@@ -3,6 +3,7 @@
 → allt annat bygger på detta */
 
 /* --- Färgtema --- */
+/* --- THEME: RED (DEFAULT) --- */
 :root {
     /* 🎨 Färgtema – komponentvänligt */
     --color-primary: #480b16;
@@ -24,14 +25,26 @@
     --space-lg: 32px;
 }
 
-[data-theme="red"] {
-    --color-primary: #480b16;
-    --color-secondary: rgba(197, 87, 87, 0.15);
-    --color-bg: rgba(0, 0, 0, 0.65);
+/* --- THEME: BLUE --- */
+[data-theme="blue"] {
+    --color-primary: #6ab2ff;
+    --color-secondary: rgba(87, 147, 197, 0.15);
+    --color-bg: rgba(0, 20, 60, 0.65);
     --color-box-shadow: 0 0 6px rgba(0,0,0,0.6);
-    --color-surface: rgba(255, 255, 255, 0.1);
-    --color-text: #ffffff;
-    --color-accent: #ffd07a;
+    --color-surface: rgba(200, 230, 255, 0.1);
+    --color-text: #e2f0ff;
+    --color-accent: #cbe6ff;
+}
+
+/* --- THEME: GREEN --- */
+[data-theme="green"] {
+    --color-primary: #49d17c;
+    --color-secondary: rgba(87, 197, 138, 0.15);
+    --color-bg: rgba(0, 60, 30, 0.65);
+    --color-box-shadow: 0 0 6px rgba(0,0,0,0.6);
+    --color-surface: rgba(225, 255, 230, 0.1);
+    --color-text: #eaffea;
+    --color-accent: #d4ffba;
 }
 
 
