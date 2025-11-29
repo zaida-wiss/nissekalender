@@ -8,7 +8,7 @@ h1, h2, h3, h4, p {
     text-align: center;
 }
 h3{
-    margin-top: var(--space-sm) 0 var(--space-sm) 0; 
+    margin: var(--space-sm) 0;
     font-weight: 700;        /* gör rubriken FET */
     text-transform: uppercase; /* gör ALLA bokstäver STORA */
     
@@ -20,6 +20,7 @@ h3{
     border: var(--color-primary) 1px solid;
     padding: var(--space-md);
     color: var(--color-text);
+    max-width: 80%;
 }
 /* Startskärmen */
 .start-screen, button{
@@ -27,11 +28,15 @@ h3{
     padding: var(--space-sm);
     border-radius: var(--radius-md);
     text-align: center;
-    color: var(--color-text);
     width: 80%;
     margin: var(--space-lg) var(--space-lg) var(--space-lg) var(--space-lg);
     box-shadow: var( --color-box-shadow);
+    color: var(--color-text);
+}
+button {
     font-family: "schoolbell", cursive;
+    cursor: pointer;
+
 }
 
 /* Bilder i komponenter */
@@ -61,8 +66,8 @@ h3{
 .open-btn:hover,
 .open-btn:focus {
     background-color: var(--color-accent);
-    transform: scale(1.05);
 }
+
 .open-btn:focus-visible {
     outline: 3px solid #ffd07a;
 }

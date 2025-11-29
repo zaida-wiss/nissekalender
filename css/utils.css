@@ -12,13 +12,6 @@ Du har alltså gjort något som är över kursnivå och går rakt in i branschen
     animation: fadeIn 0.8s ease-out forwards;
     opacity: 0;
 }
-
-.card {
-    border-radius: 20px;
-    padding: 20px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
-}
-
 .text-center {
     text-align: center;
 }

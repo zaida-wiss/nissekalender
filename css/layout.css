@@ -59,7 +59,3 @@ body {
 #todayLucka.visible {
     display: grid;
 }
-
-.card {
-    max-width: 80%;
-}
