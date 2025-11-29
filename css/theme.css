@@ -7,7 +7,7 @@
 :root {
     /* 🎨 Färgtema – komponentvänligt */
     --color-primary: #480b16;
-    --color-secondary: rgba(197, 87, 87, 0.15);
+    --color-secondary: rgba(245, 6, 6, 0.15);
     --color-text: #ffffff;
     --color-accent: #ffd07a;
     --color-bg: rgba(0, 0, 0, 0.65);
