@@ -24,7 +24,7 @@ import { fadeIn } from "./utils/fade.js";
 // DATUM (live / test)
 // =============================
 let today = getToday();
-// today = "2025-12-02"; // testdatum vid behov
+today = "2025-12-05"; // testdatum vid behov
 
 
 // =============================
