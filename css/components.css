@@ -3,8 +3,8 @@ h1, h2, h3, h4, p {
     font-family: "Indie Flower", cursive;
     font-weight: 400;
     color: var(--color-text);
-    margin-top: var(--space-smce);
-    margin-bottom: var(--space-smce);
+    margin-top: var(--space-sm);
+    margin-bottom: var(--space-sm);
     text-align: center;
 }
 h3{
@@ -13,19 +13,14 @@ h3{
     text-transform: uppercase; /* gör ALLA bokstäver STORA */
     
 }
-/* Nissebrevet */
-.nisseBrevet {
+.card{
     background-color: var(--color-bg);
+    box-shadow: var(--color-box-shadow);
     border-radius: var(--radius-lg);
-    padding: var(--space-md);
-    display: flex;
-    flex-direction: column;
-    color: var(--color-text);
     width: 80%;
-    overflow-wrap: break-word;
-    word-wrap: break-word;
+    padding: var(--space-md);
+    color: var(--color-text);
 }
-
 /* Startskärmen */
 .start-screen, button{
     background-color: var(--color-bg);
@@ -47,7 +42,7 @@ img {
 
 /* Knapp: öppna dagens lucka */
 .open-btn {
-    margin-top: var(--radius-lg);
+    margin-top: var(--space-lg);
     padding: var( --space-md) var( --space-md);
     border: none;
     border-radius: var(--radius-md);
@@ -76,16 +71,6 @@ img {
     transform: scale(0.98);
 }
 
-
-.nisseStyle {
-border-radius: 15px;
-font-family: "Indie Flower", cursive;
-background-color: var(--color-bg);
-gap: 20px;
-padding: 10px;
-margin-top: 50px;
-
-}
 .nisse-divider {
     width: 80%;               /* gör den centrerad och responsiv */
     margin: 2px auto 5px;   /* centrerar och ger luft */
