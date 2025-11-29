@@ -17,7 +17,7 @@ h3{
     background-color: var(--color-bg);
     box-shadow: var(--color-box-shadow);
     border-radius: var(--radius-lg);
-    width: 80%;
+    border: var(--color-primary) 1px solid;
     padding: var(--space-md);
     color: var(--color-text);
 }
@@ -25,7 +25,7 @@ h3{
 .start-screen, button{
     background-color: var(--color-bg);
     padding: var(--space-sm);
-    border-radius: var(--space-md);
+    border-radius: var(--radius-md);
     text-align: center;
     color: var(--color-text);
     width: 80%;
@@ -35,7 +35,7 @@ h3{
 }
 
 /* Bilder i komponenter */
-img {
+img .card{
     width: 200px;
     bottom: 20px;
 }
@@ -60,7 +60,7 @@ img {
 
 .open-btn:hover,
 .open-btn:focus {
-    background-color: var(--color-primary);
+    background-color: var(--color-accent);
     transform: scale(1.05);
 }
 .open-btn:focus-visible {

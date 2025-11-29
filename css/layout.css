@@ -11,7 +11,7 @@ html, body {
 
 body {
     display: grid;
-    padding: 10px;
+    padding: var(--space-sm);
 }
 .hero-bg {
     position: fixed;
@@ -42,15 +42,14 @@ body {
 /* Wrapper för dagens lucka */
 #todayLucka {    
     display: none;
-    margin-top: 20px;
-    margin-bottom: 60px;
+    margin: var(--space-lg) 0;
     width: 90%;
     padding: 0px;
     grid-template-columns: 1fr;
     grid-auto-rows: auto;
     justify-items: center;
     line-height: 1.2;
-    gap: 20px 30px;
+    gap: var(--space-md) var(--space-lg);
 }
 
 #todayLucka.hidden {
@@ -59,4 +58,8 @@ body {
 
 #todayLucka.visible {
     display: grid;
+}
+
+.card {
+    max-width: 80%;
 }
