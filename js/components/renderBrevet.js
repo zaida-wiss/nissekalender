@@ -11,7 +11,7 @@ export function renderBrevet(today, todaysData) {
     if (!todaysData) {
         content = `
             ${title}
-            <p>Inget brev hittades.<br>- Bor det någon här för tillfället?.</p>
+            <p>Inget brev hittades.<br>Här bor ingen just nu.</p>
         `;
     } else {
         content = `
