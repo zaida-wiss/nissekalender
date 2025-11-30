@@ -14,6 +14,9 @@ import { renderUppdrag } from "./components/renderUppdrag.js";
 import { renderHjarteglitter } from "./components/renderHjarteglitter.js";
 import { renderRecept } from "./components/renderRecept.js";
 import { renderPuzzle } from "./components/renderPuzzle.js";
+import { initThemePicker } from "./themeSwitcher.js";
+
+initThemePicker();
 
 
 // === UTILS ===
