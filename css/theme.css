@@ -7,8 +7,8 @@
 :root {
     /* 🎨 Färgtema – komponentvänligt */
     --color-primary: #480b16;
-    --color-secondary: rgba(245, 6, 6, 0.15);
-    --color-text: #ffffff;
+    --color-secondary: rgba(220, 155, 155, 0.15);
+    --color-text: #b8b5b5;
     --color-accent: #5a5856;
     --color-bg: rgba(0, 0, 0, 0.65);
     --color-box-shadow: 0 0 6px rgba(0,0,0,0.6);
@@ -50,7 +50,7 @@
 
 /* Bakgrund */
 body {
-    background: linear-gradient(45deg, lightgreen, var(--nisse-night), darkgreen);
+    background: linear-gradient(45deg, lightgreen, rgb(2, 43, 2), darkgreen);
     font-family: 'Arial', sans-serif;
 }
 
