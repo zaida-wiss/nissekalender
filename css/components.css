@@ -89,13 +89,15 @@ button {
 /* --- 🎄 Tema-kulor --- */
 .theme-picker {
     display: flex;
+    justify-content: center;
     gap: 0;
     margin: var(--space-sm) 0;
 }
 
 .ball {
-    width: auto;
+    width: 100px;
     height: auto;
+    border-radius: 38px;
     cursor: pointer;
     transition: transform .2s ease, box-shadow .2s ease;
 }
@@ -104,4 +106,8 @@ button {
 .ball:hover,
 .ball:focus-visible {
     transform: scale(1.15);
+}
+.ball.active {
+    transform: scale(1.25);
+    filter: drop-shadow(0 0 12px var(--color-accent));
 }
