@@ -13,17 +13,8 @@ h3{
     text-transform: uppercase; /* gör ALLA bokstäver STORA */
     
 }
-.card{
-    background-color: var(--color-bg);
-    box-shadow: var(--color-box-shadow);
-    border-radius: var(--radius-lg);
-    border: var(--color-primary) 1px solid;
-    padding: var(--space-md);
-    color: var(--color-text);
-    max-width: 80%;
-}
 /* Startskärmen */
-.start-screen, button{
+.start-screen{
     background-color: var(--color-bg);
     padding: var(--space-sm);
     border-radius: var(--radius-md);
@@ -34,11 +25,18 @@ h3{
     color: var(--color-text);
 }
 button {
+    margin: var(--space-lg) var(--space-lg) var(--space-lg) var(--space-lg);
     font-family: "schoolbell", cursive;
     cursor: pointer;
-
 }
-
+.card{
+    background-color: var(--color-bg);
+    box-shadow: var(--color-box-shadow);
+    border-radius: var(--radius-lg);
+    border: var(--color-primary) 1px solid;
+    padding: var(--space-md);
+    color: var(--color-text);
+}
 /* Bilder i komponenter */
 .card img {
     width: 200px;
@@ -76,9 +74,34 @@ button {
     transform: scale(0.98);
 }
 
+/* streck som delar av rubrik från text (design)*/
 .nisse-divider {
     width: 80%;               /* gör den centrerad och responsiv */
     margin: 2px auto 5px;   /* centrerar och ger luft */
     border: none;             /* ta bort standard-stil */
     border-top: 2px solid rgba(255, 255, 255, 0.7);  /* snygg linje */
+}
+
+/* --------------------------------------------------------------------------
+|                                                                           |   
+|   BYT TEMA: VÄLJ EN NY FÄRG                                               |
+--------------------------------------------------------------------------- */
+/* --- 🎄 Tema-kulor --- */
+.theme-picker {
+    display: flex;
+    gap: 0;
+    margin: var(--space-sm) 0;
+}
+
+.ball {
+    width: auto;
+    height: auto;
+    cursor: pointer;
+    transition: transform .2s ease, box-shadow .2s ease;
+}
+
+/* Hover & focus */
+.ball:hover,
+.ball:focus-visible {
+    transform: scale(1.15);
 }
