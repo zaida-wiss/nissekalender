@@ -7,7 +7,7 @@
 :root {
     /* 🎨 Färgtema – komponentvänligt */
     --color-primary: #480b16;
-    --color-secondary: rgba(245, 6, 6, 0.15);
+    --color-secondary: rgba(175, 44, 44, 0.534);
     --color-text: #c8b3b3;
     --color-accent: #5a5856;
     --color-bg: rgba(0, 0, 0, 0.65);
@@ -50,11 +50,11 @@
 
 /* --- THEME: BLUE --- */
 [data-theme="blue"] {
-    --color-primary: #090738;
+    --color-primary: #332f93;
     --color-secondary: rgba(82, 144, 219, 0.484);
-    --color-text: #020111;
+    --color-text: #aba6e9;
     --color-accent: #02030cac;
-    --color-bg: rgba(95, 93, 154, 0.806);
+    --color-bg: rgba(6, 2, 68, 0.809);
     --color-box-shadow: 0 0 6px rgba(205, 208, 32, 0.85);
     --color-surface: rgba(101, 39, 178, 0.896);
     --color-primary: #6ab2ff;
@@ -73,7 +73,7 @@
     --color-secondary: rgba(127, 144, 18, 0.816);
     --color-text: #889489;
     --color-accent: #5a5856;
-    --color-bg: rgba(4, 63, 4, 0.782);
+    --color-bg: rgba(3, 49, 3, 0.817);
     --color-box-shadow: 0 0 6px rgba(205, 208, 32, 0.85);
     --color-surface: rgba(101, 39, 178, 0.896);
 }
