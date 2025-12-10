@@ -14,6 +14,7 @@ import { renderUppdrag } from "./components/renderUppdrag.js";
 import { renderHjarteglitter } from "./components/renderHjarteglitter.js";
 import { renderRecept } from "./components/renderRecept.js";
 import { renderPuzzle } from "./components/renderPuzzle.js";
+import { initFilmGallery } from "./modules/filmGallery.js";
 import { initThemePicker } from "./themeSwitcher.js";
 
 initThemePicker();
@@ -81,3 +82,30 @@ if (todaysExtra.pussel) todayLucka.appendChild(renderPuzzle(todaysExtra));
 fadeIn(todayLucka);
 }
 
+
+// === FILMGALLERI ===//
+
+// Hämta filmsektion + ikon
+const filmTipsSection = document.getElementById("film-tips");
+const movieBtn = document.getElementById("movieBtn"); // <-- din movies.svg
+
+// Lägg till klick + tangentbordsstöd
+movieBtn.addEventListener("click", () => {
+    showFilmTips();
+});
+
+movieBtn.addEventListener("keydown", (e) => {
+    if (e.key === "Enter") showFilmTips();
+});
+
+function showFilmTips() {
+    // Dölj allt annat så filmsektionen inte hamnar bakom
+    startScreen.style.display = "none";
+    todayLucka.style.display = "none";
+
+    // Visa filmsektionen
+    filmTipsSection.classList.add("film-visible");
+
+    // Rendera filmer
+    initFilmGallery(filmTipsSection);
+}
