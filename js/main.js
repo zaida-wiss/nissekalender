@@ -87,7 +87,9 @@ fadeIn(todayLucka);
 
 // Hämta filmsektion + ikon
 const filmTipsSection = document.getElementById("film-tips");
-const movieBtn = document.getElementById("movieBtn"); // <-- din movies.svg
+const movieBtn = document.getElementById("movieBtn"); // <-- din movies.png
+
+console.log("movieBtn är:", movieBtn);
 
 // Lägg till klick + tangentbordsstöd
 movieBtn.addEventListener("click", () => {

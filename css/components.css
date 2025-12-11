@@ -137,9 +137,11 @@ button {
     display: none; /* dold från start */
     width: 100%;
     padding: 20px;
+    position: relative;
+    z-index: 10;
 }
 
-film-visible {
+.film-visible {
     display: block;
 }
 #movieBtn {
