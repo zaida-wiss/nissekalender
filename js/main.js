@@ -15,7 +15,7 @@ import { renderHjarteglitter } from "./components/renderHjarteglitter.js";
 import { renderRecept } from "./components/renderRecept.js";
 import { renderPuzzle } from "./components/renderPuzzle.js";
 import { initFilmGallery } from "./modules/filmGallery.js";
-import { initThemePicker } from "./themeSwitcher.js";
+import { initThemePicker } from "./components/themeSwitcher.js";
 
 initThemePicker();
 
