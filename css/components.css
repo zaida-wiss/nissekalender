@@ -139,13 +139,6 @@ button {
     padding: 20px;
 }
 
-.film-tips.film-visible {
+film-visible {
     display: block;
-}
-.film-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-    gap: var(--space-md);
-    width: 100%;
-    margin-top: 20px;
 }

@@ -1,7 +1,7 @@
 console.log("filmGallery.js laddas..");
 
 import { fetchFilms } from "./services/filmApi.js";
-import { renderFilmCard } from "../components/renderFilm.js";
+import { renderFilmCard } from "./components/renderFilm.js";
 
 export async function initFilmGallery(targetElement) {
     targetElement.innerHTML = "";
