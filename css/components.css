@@ -11,7 +11,7 @@ h3{
     margin: var(--space-sm) 0;
     font-weight: 700;        /* gör rubriken FET */
     text-transform: uppercase; /* gör ALLA bokstäver STORA */
-    
+
 }
 /* Startskärmen */
 .start-screen{
@@ -83,7 +83,7 @@ button {
 }
 
 /* --------------------------------------------------------------------------
-|                                                                           |   
+|                                                                           |
 |   BYT TEMA: VÄLJ EN NY FÄRG                                               |
 --------------------------------------------------------------------------- */
 /* --- 🎄 Tema-kulor --- */

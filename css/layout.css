@@ -42,7 +42,7 @@ body {
 }
 
 /* Wrapper för dagens lucka */
-#todayLucka {    
+#todayLucka {
     display: none;
     margin: var(--space-lg) 0;
     width: 90%;
