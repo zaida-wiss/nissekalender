@@ -8,3 +8,9 @@
 
 /* 3. Komponenter (brevet, bus, uppdrag, knappar, startskärm) */
 @import url("./css/components.css");
+
+/* 4. Hjälpklasser (utilities) */
+@import url("./css/utilities.css");
+
+/* 5. Adventskalender */
+@import url("./css/modules/adventskalender.css");
