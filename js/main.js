@@ -17,6 +17,7 @@ import { renderPuzzle } from "./components/renderPuzzle.js";
 import { initAdventCalendar } from "./modules/adventsKalender.js";
 import { initFilmGallery } from "./modules/filmGallery.js";
 import { initThemePicker } from "./components/themeSwitcher.js";
+import { setActiveSection, closeAllSections } from "./utils/viewManager.js";
 
 initThemePicker();
 initAdventCalendar();
@@ -49,9 +50,9 @@ openBtn.disabled = true;
 
 
 setTimeout(() => {
-startScreen.style.display = "none";
-todayLucka.style.display = "grid";
+setActiveSection("todayLucka");
 renderToday();
+
 }, 1000);
 });
 
@@ -105,13 +106,6 @@ movieBtn.addEventListener("keydown", (e) => {
 });
 
 function showFilmTips() {
-    // Dölj allt annat så filmsektionen inte hamnar bakom
-    startScreen.style.display = "none";
-    todayLucka.style.display = "none";
-
-    // Visa filmsektionen
-    filmTipsSection.classList.add("film-visible");
-
-    // Rendera filmer
-    initFilmGallery(filmTipsSection);
+  setActiveSection("film-tips");
+  initFilmGallery(filmTipsSection);
 }

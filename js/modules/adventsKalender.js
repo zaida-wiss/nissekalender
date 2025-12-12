@@ -1,6 +1,7 @@
 // js/modules/adventCalendar.js
 import { getToday } from "../data/dayUtils.js";
 import { nisseKalender } from "../data/nisseKalender.js";
+import { setActiveSection, closeAllSections } from "../utils/viewManager.js";
 
 
 let lastFocusedElement = null;
@@ -8,6 +9,7 @@ let lastFocusedElement = null;
 export function initAdventCalendar() {
     const adventBtn = document.getElementById("adventBtn");
     const adventSection = document.getElementById("advent-kalender");
+
 
     if (!adventBtn || !adventSection) {
         console.error("❌ Adventkalender: Kunde inte hitta viktiga DOM-element.");
@@ -27,20 +29,19 @@ export function initAdventCalendar() {
 /* ===========================
     ÖPPNA ADVENTSKALENDERN
 =========================== */
-function openAdvent(section, triggerBtn) {
+function openAdvent(section) {
     try {
         lastFocusedElement = document.activeElement;
 
-        section.innerHTML = "";
-        section.style.display = "block";
+        // 👉 LÅT viewManager styra vyn
+        setActiveSection("advent-kalender");
 
+        section.innerHTML = "";
         buildCalendar(section);
 
-        // Sätt fokus på första elementet i modalen
         const firstBtn = section.querySelector("button, [tabindex]");
         if (firstBtn) firstBtn.focus();
 
-        // ESC för att stänga
         document.addEventListener("keydown", handleEsc);
 
     } catch (error) {
@@ -51,13 +52,11 @@ function openAdvent(section, triggerBtn) {
 /* ===========================
     STÄNG ADVENTSKALENDERN
 =========================== */
-function closeAdvent(section, triggerBtn) {
+function closeAdvent() {
     try {
-        section.style.display = "none";
-        section.innerHTML = "";
+        closeAllSections();
         document.removeEventListener("keydown", handleEsc);
 
-        // Återställ fokus
         if (lastFocusedElement) {
             lastFocusedElement.focus();
         }
@@ -67,21 +66,13 @@ function closeAdvent(section, triggerBtn) {
     }
 }
 
+
 function handleEsc(e) {
     if (e.key === "Escape") {
-        try {
-            const section = document.getElementById("advent-kalender");
-            const triggerBtn = document.getElementById("adventBtn");
-
-            if (section && section.style.display === "block") {
-                closeAdvent(section, triggerBtn);
-            }
-
-        } catch (error) {
-            console.error("❌ ESC-fel vid stängning:", error);
-        }
+        closeAdvent();
     }
 }
+
 
 /* ===========================
     BYGG KALENDERN (24 LUCKOR)
@@ -99,7 +90,8 @@ function buildCalendar(section) {
         closeBtn.classList.add("close-btn");
         closeBtn.textContent = "Stäng";
         closeBtn.setAttribute("aria-label", "Stäng adventskalendern");
-        closeBtn.addEventListener("click", () => closeAdvent(section));
+       closeBtn.addEventListener("click", closeAdvent);
+
         section.appendChild(closeBtn);
 
         // Grid där luckor ska ligga
