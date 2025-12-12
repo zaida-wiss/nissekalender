@@ -9,14 +9,14 @@
     --radius-sm: 6px;
     --radius-md: 12px;
     --radius-lg: 20px;
-    
+
     /* 🔢 Spacing */
     --space-sm: 8px;
     --space-md: 16px;
     --space-lg: 32px;
 
     /* 🎨 Färgtema – komponentvänligt */
-    --color-primary: #480b16;
+    --color-primary: #240309;
     --color-secondary: rgba(235, 160, 106, 0.621);
     --color-text: #c8b3b3;
     --color-accent: #5a5856;
@@ -34,7 +34,7 @@
     --color-bg: rgba(0, 20, 60, 0.65);
     --color-box-shadow: 0 0 6px rgba(0,0,0,0.6);
     --color-surface: rgba(200, 230, 255, 0.1);
-    
+
 }
 
 /* --- THEME: GREEN --- */

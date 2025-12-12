@@ -32,9 +32,21 @@
 /* GRID */
 .advent-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(70px, 1fr));
+  grid-template-columns: repeat(4, 1fr);
   gap: 12px;
   margin-top: 1rem;
+}
+
+.advent-kalender {
+  position: relative;
+  min-height: 100vh;
+  padding: var(--space-lg);
+  border-radius: var(--radius-lg);
+
+  background-image: url("./bilder/adventskalender.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 /* LUCKOR */
@@ -83,8 +95,12 @@
 
 /* Textdelen under kalendern */
 #advent-detail-container {
+  background-color: rgb(233, 235, 218);
+  border-radius: var(--radius-lg);
   margin-top: 1rem;
   padding: 1rem 0;
+  position: relative;
+  right: 0px;
 }
 
 .advent-detail {
@@ -94,7 +110,12 @@
   text-align: center;
   line-height: 1.4;
 }
-
+.advent-detail p{
+color: var(--color-primary);
+}
 @keyframes fadeIn {
   to { opacity: 1; }
+}
+.underline {
+  text-decoration: underline;
 }

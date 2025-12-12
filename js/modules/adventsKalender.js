@@ -145,12 +145,7 @@ function openDoor(day, doorBtn, section) {
         if (todaysData) {
             let html = "";
 
-            if (todaysData.brev) html += `<p>📜 <strong>Brev:</strong> ${todaysData.brev}</p>`;
-            if (todaysData.bus) html += `<p>🧝 <strong>Bus:</strong> ${todaysData.bus}</p>`;
-            if (todaysData.uppdrag) html += `<p>🎄 <strong>Uppdrag:</strong> ${todaysData.uppdrag}</p>`;
-            if (todaysData.hjarteglitter) html += `<p>💛 <strong>Hjärteglitter:</strong> ${todaysData.hjarteglitter}</p>`;
-            if (todaysData.recept) html += `<p>🍪 <strong>Recept:</strong> ${todaysData.recept}</p>`;
-            if (todaysData.pussel) html += `<p>🧩 <strong>Pussel:</strong> ${todaysData.pussel}</p>`;
+            if (todaysData.hjarteglitter) html += `<p>💛 <strong><span class="underline">Hjärteglitter:</span></strong><br> ${todaysData.hjarteglitter}</p>`;
 
             detail.innerHTML = html;
         } else {
