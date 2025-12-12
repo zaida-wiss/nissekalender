@@ -1,23 +1,24 @@
-console.log("filmGallery.js laddas..");
+console.log("🧠 filmGallery.js laddas – RÄTT FIL");
 
-import { fetchFilms } from "../services/filmApi.js";
-import { renderFilmCard } from "../components/renderFilm.js";
+import { renderFilm } from "../components/renderFilm.js";
+// import { filmData } from "../data/filmData.js"; // om du har riktig data
 
-export async function initFilmGallery(targetElement) {
-    targetElement.innerHTML = "";
-    targetElement.classList.add("film-grid");
+export function initFilmGallery(container) {
+  console.log("🎬 initFilmGallery körs – RÄTT FUNKTION");
 
-    try {
-        const films = await fetchFilms();
-        renderFilms(films, targetElement);
-    } catch (error) {
-        targetElement.textContent = "Filmerna kunde inte laddas just nu.";
-    }
-}
+  container.innerHTML = "";
 
-function renderFilms(films, container) {
-    films.forEach(film => {
-        const card = renderFilmCard(film);
-        container.appendChild(card);
-    });
+  const grid = document.createElement("div");
+  grid.classList.add("film-grid");
+  container.appendChild(grid);
+
+  // 🔴 TEMP TEST – EN FILM (tar bort sen)
+  const testFilm = {
+    title: "Ensamma hemma-nissen 🎄",
+    image: "./bilder/movies.png",
+    release_date: "2024",
+    description: "Testfilm för att verifiera renderFilm"
+  };
+
+  grid.appendChild(renderFilm(testFilm));
 }

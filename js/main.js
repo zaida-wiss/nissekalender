@@ -97,15 +97,17 @@ console.log("filmTipsSection:", filmTipsSection);
 console.log("movieBtn är:", movieBtn);
 
 // Lägg till klick + tangentbordsstöd
-movieBtn.addEventListener("click", () => {
-    showFilmTips();
-});
+movieBtn.addEventListener("click", openFilmGallery);
 
 movieBtn.addEventListener("keydown", (e) => {
-    if (e.key === "Enter") showFilmTips();
+  if (e.key === "Enter" || e.key === " ") {
+    e.preventDefault(); // viktigt för space på button
+    openFilmGallery();
+  }
 });
 
-function showFilmTips() {
+function openFilmGallery() {
+  console.log("🎬 öppnar filmgalleri");
   setActiveSection("film-tips");
   initFilmGallery(filmTipsSection);
 }

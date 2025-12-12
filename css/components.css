@@ -161,11 +161,16 @@ button {
     margin-bottom: var(--space-sm);
 }
 .film-tips {
-    display: none; /* dold från start */
     width: 100%;
     padding: 20px;
     position: relative;
     z-index: 10;
 }
+.app-section {
+    display: none;
+}
 
+.app-section.is-active {
+    display: block; /* eller grid/flex */
+}
 
