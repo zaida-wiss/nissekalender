@@ -138,7 +138,17 @@ button {
 }
 
 
-
+/* ===============*FILMER*================ */
+/* --- Filmgrid layout --- */
+.film-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: var(--space-md);
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: var(--space-md);
+}
 /* --- Filmcard modifier --- */
 .film-card {
     text-align: left;
@@ -173,4 +183,6 @@ button {
 .app-section.is-active {
     display: block; /* eller grid/flex */
 }
+
+
 

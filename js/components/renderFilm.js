@@ -1,6 +1,6 @@
 console.log("renderFilm.js laddas..");
 
-export function renderFilm(film) {
+export function renderFilmCard(film) {
   const wrapper = document.createElement("article");
   wrapper.classList.add("card", "film-card", "fade-in");
 

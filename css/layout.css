@@ -61,13 +61,3 @@ body {
 #todayLucka.visible {
     display: grid;
 }
-/* --- Filmgrid layout --- */
-.film-grid{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: var(--space-md);
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: var(--space-md);
-}
