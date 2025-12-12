@@ -142,7 +142,7 @@ button {
 /* --- Filmgrid layout --- */
 .film-grid{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    grid-template-columns: 1fr;
     gap: var(--space-md);
     width: 100%;
     max-width: 1200px;
