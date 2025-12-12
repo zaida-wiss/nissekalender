@@ -145,7 +145,7 @@ button {
     display: block;
 }
 
-/* GÖMMER BUTTON */
+/* Göm knappens styling, visa bildens styling */
 .filmBtn {
   background: none;
   border: none;
@@ -153,14 +153,17 @@ button {
   margin: 0;
   cursor: pointer;
 }
-/* GÖR BILDEN TILL KNAPP ISTÄLLET */
+
+/* Placera själva KNAPPEN där du vill ha den */
 #movieBtn {
-    width: 60px;
     position: fixed;
     bottom: 20px;
     right: 20px;
-    cursor: pointer;
     z-index: 1000;
 }
 
-
+/* Bildens size */
+#movieBtn img {
+    width: 60px;
+    display: block;
+}

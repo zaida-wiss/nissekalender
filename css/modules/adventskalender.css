@@ -1,34 +1,29 @@
- /* ===============* ADVENTSKALENDER *================= */
-#adventImg {
-    width: 40px;
-    position: fixed;
-    bottom: 100px;
-    right: 30px;
-    cursor: pointer;
-    z-index: 1000;
-}
+/* Göm knappens standardutseende */
 .advent-btn {
   background: none;
   border: none;
   padding: 0;
   margin: 0;
   cursor: pointer;
-}
-#advent-kalender {
-  display: none;
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 90%;
-  max-width: 600px;
-  height: 80%;
-  background-color: var(--color-bg);
-  border-radius: var(--radius-md);
-  box-shadow: var(--color-box-shadow);
-  padding: var(--space-md);
-  overflow-y: auto;
-  z-index: 1001;
+  appearance: none;
 }
 
+/* Positionera KNAPPEN (inte bilden!) */
+#adventBtn {
+    position: fixed;
+    bottom: 100px;   /* ändra efter smak */
+    right: 30px;     /* ändra efter smak */
+    z-index: 1000;   /* över allt annat */
+}
 
+/* Bildens utseende */
+#adventBtn img {
+    width: 40px;     /* eller större */
+    display: block;  /* så ingen textlinje dyker upp */
+}
+
+/* Fokusmarkering enligt WCAG */
+#adventBtn:focus-visible {
+    outline: 3px solid #f6e27f;
+    outline-offset: 4px;
+}
