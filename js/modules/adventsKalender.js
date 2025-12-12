@@ -51,25 +51,25 @@ function openAdvent(section) {
 /* ===========================
       STÄNG ADVENTSKALENDERN
 =========================== */
-// function closeAdvent() {
-//     try {
-//         closeAllSections();
-//         document.removeEventListener("keydown", handleEsc);
+function closeAdvent() {
+    try {
+        closeAllSections();
+        document.removeEventListener("keydown", handleEsc);
 
-//         if (lastFocusedElement) {
-//             lastFocusedElement.focus();
-//         }
+        if (lastFocusedElement) {
+            lastFocusedElement.focus();
+        }
 
-//     } catch (error) {
-//         console.error("❌ Fel vid stängning av adventskalender:", error);
-//     }
-// }
+    } catch (error) {
+        console.error("❌ Fel vid stängning av adventskalender:", error);
+    }
+}
 
-// function handleEsc(e) {
-//     if (e.key === "Escape") {
-//         closeAdvent();
-//     }
-// }
+function handleEsc(e) {
+    if (e.key === "Escape") {
+        closeAdvent();
+    }
+}
 
 
 /* ===========================
@@ -116,6 +116,13 @@ function buildCalendar(section) {
         modal.style.display = "none";
         section.appendChild(modal);
 
+        // Lägg click-outside-stängning HÄR
+modal.addEventListener("click", (e) => {
+    if (e.target === modal) {
+        closeModal();
+    }
+});
+
     } catch (error) {
         console.error("❌ Fel vid byggandet av kalendern:", error);
     }
@@ -155,19 +162,14 @@ function openDoor(day, doorBtn) {
 
         content.innerHTML = html;
 
-        const closeBtn = document.createElement("button");
-        closeBtn.textContent = "Stäng";
-        closeBtn.classList.add("close-modal-btn");
-        closeBtn.addEventListener("click", closeModal);
-
-        content.appendChild(closeBtn);
-
         modal.appendChild(content);
 
-        modal.style.display = "flex";
-        content.focus();
+modal.style.display = "flex";
+content.focus();
 
-        document.addEventListener("keydown", escCloseModal);
+
+// ESC-stängning
+document.addEventListener("keydown", escCloseModal);
 
     } catch (error) {
         console.error(`❌ Fel vid öppning av lucka ${day}:`, error);
