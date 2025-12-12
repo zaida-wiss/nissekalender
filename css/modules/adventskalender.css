@@ -32,15 +32,17 @@
 /* GRID */
 .advent-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 12px;
-  margin-top: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(60px, 1fr));
+  gap: var(--space-sm);
+  margin-top: 0;        /* vi centrerar via flex nu */
+  width: 100%;
+  max-width: 320px;     /* testa 260–340px beroende på din bild */
 }
 
 .advent-kalender {
   position: relative;
   min-height: 100vh;
-  padding: var(--space-lg);
+  padding: var(--space-md);
   border-radius: var(--radius-lg);
   width: 100%;
 
@@ -48,12 +50,19 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+
+  /* NYTT – centrera griden på bilden */
+  display: flex;
+  justify-content: center;   /* horisontellt */
+  align-items: center;       /* vertikalt   */
 }
+
 
 /* LUCKOR */
 .advent-door {
   padding: 0.6rem;
-  height: 70px;
+ aspect-ratio: 1 / 1;  /* alltid kvadratiska luckor */
+min-height: 50px;
   background: rgba(199, 116, 15, 0.688);
   backdrop-filter: blur(6px);
   border-radius: 8px;
@@ -153,7 +162,8 @@ color: var(--color-primary);
 .advent-modal-content p,
 .advent-modal-content h2 {
     margin: 0.5rem 0;
-  color: black;
+    color: black;
+}
 @keyframes fadeIn {
     from { opacity: 0; transform: scale(0.9); }
     to   { opacity: 1; transform: scale(1); }
