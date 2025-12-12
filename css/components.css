@@ -153,7 +153,7 @@ button {
   margin: 0;
   cursor: pointer;
 }
-* GÖR BILDEN TILL EN KNAPP */
+/* GÖR BILDEN TILL KNAPP ISTÄLLET */
 #movieBtn {
     width: 60px;
     position: fixed;
