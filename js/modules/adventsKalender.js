@@ -85,15 +85,6 @@ function buildCalendar(section) {
         heading.textContent = "Adventskalender";
         section.appendChild(heading);
 
-        // Stäng-knapp
-        const closeBtn = document.createElement("button");
-        closeBtn.classList.add("close-btn");
-        closeBtn.textContent = "Stäng";
-        closeBtn.setAttribute("aria-label", "Stäng adventskalendern");
-       closeBtn.addEventListener("click", closeAdvent);
-
-        section.appendChild(closeBtn);
-
         // Grid där luckor ska ligga
         const grid = document.createElement("div");
         grid.classList.add("advent-grid");
