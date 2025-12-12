@@ -3,43 +3,41 @@ import { getToday } from "../data/dayUtils.js";
 import { nisseKalender } from "../data/nisseKalender.js";
 import { setActiveSection, closeAllSections } from "../utils/viewManager.js";
 
-
 let lastFocusedElement = null;
 
 export function initAdventCalendar() {
     const adventBtn = document.getElementById("adventBtn");
     const adventSection = document.getElementById("advent-kalender");
 
-
     if (!adventBtn || !adventSection) {
         console.error("❌ Adventkalender: Kunde inte hitta viktiga DOM-element.");
         return;
     }
 
-    // Öppna adventskalender
-    adventBtn.addEventListener("click", () => openAdvent(adventSection, adventBtn));
+    adventBtn.addEventListener("click", () => openAdvent(adventSection));
     adventBtn.addEventListener("keydown", (e) => {
         if (e.key === "Enter" || e.key === " ") {
             e.preventDefault();
-            openAdvent(adventSection, adventBtn);
+            openAdvent(adventSection);
         }
     });
 }
 
+
 /* ===========================
-    ÖPPNA ADVENTSKALENDERN
+      ÖPPNA ADVENTSKALENDERN
 =========================== */
 function openAdvent(section) {
     try {
         lastFocusedElement = document.activeElement;
 
-        // 👉 LÅT viewManager styra vyn
         setActiveSection("advent-kalender");
 
         section.innerHTML = "";
         buildCalendar(section);
 
-        const firstBtn = section.querySelector("button, [tabindex]");
+        // sätter fokus på första luckan
+        const firstBtn = section.querySelector("button");
         if (firstBtn) firstBtn.focus();
 
         document.addEventListener("keydown", handleEsc);
@@ -49,43 +47,42 @@ function openAdvent(section) {
     }
 }
 
+
 /* ===========================
-    STÄNG ADVENTSKALENDERN
+      STÄNG ADVENTSKALENDERN
 =========================== */
-function closeAdvent() {
-    try {
-        closeAllSections();
-        document.removeEventListener("keydown", handleEsc);
+// function closeAdvent() {
+//     try {
+//         closeAllSections();
+//         document.removeEventListener("keydown", handleEsc);
 
-        if (lastFocusedElement) {
-            lastFocusedElement.focus();
-        }
+//         if (lastFocusedElement) {
+//             lastFocusedElement.focus();
+//         }
 
-    } catch (error) {
-        console.error("❌ Fel vid stängning av adventskalender:", error);
-    }
-}
+//     } catch (error) {
+//         console.error("❌ Fel vid stängning av adventskalender:", error);
+//     }
+// }
 
-
-function handleEsc(e) {
-    if (e.key === "Escape") {
-        closeAdvent();
-    }
-}
+// function handleEsc(e) {
+//     if (e.key === "Escape") {
+//         closeAdvent();
+//     }
+// }
 
 
 /* ===========================
-    BYGG KALENDERN (24 LUCKOR)
+        BYGG KALENDERN
 =========================== */
 function buildCalendar(section) {
     try {
         // Rubrik
         const heading = document.createElement("h2");
-        heading.id = "advent-title";
         heading.textContent = "Adventskalender";
         section.appendChild(heading);
 
-        // Grid där luckor ska ligga
+        // Grid för luckor
         const grid = document.createElement("div");
         grid.classList.add("advent-grid");
         section.appendChild(grid);
@@ -97,7 +94,6 @@ function buildCalendar(section) {
             const door = document.createElement("button");
             door.textContent = day;
             door.classList.add("advent-door");
-            door.setAttribute("data-day", String(day));
 
             if (day > today) {
                 door.disabled = true;
@@ -105,16 +101,20 @@ function buildCalendar(section) {
                 door.setAttribute("aria-label", `Lucka ${day} är låst`);
             } else {
                 door.setAttribute("aria-label", `Öppna lucka ${day}`);
-                door.addEventListener("click", () => openDoor(day, door, section));
+                door.addEventListener("click", () =>
+                    openDoor(day, door)
+                );
             }
 
             grid.appendChild(door);
         }
 
-        // Container för luck-innehåll
-        const detailContainer = document.createElement("div");
-        detailContainer.id = "advent-detail-container";
-        section.appendChild(detailContainer);
+        // Modal-overlay FÖR LUCKINNEHÅLL — alltid sist
+        const modal = document.createElement("div");
+        modal.id = "advent-modal";
+        modal.classList.add("advent-modal");
+        modal.style.display = "none";
+        section.appendChild(modal);
 
     } catch (error) {
         console.error("❌ Fel vid byggandet av kalendern:", error);
@@ -123,38 +123,72 @@ function buildCalendar(section) {
 
 
 /* ===========================
-    ÖPPNA EN LUCKA
+        ÖPPNA EN LUCKA
 =========================== */
-function openDoor(day, doorBtn, section) {
+function openDoor(day, doorBtn) {
     try {
-        // Animationsklass
         doorBtn.classList.add("door-open");
 
-        // Radera tidigare innehåll
-        const detailContainer = document.getElementById("advent-detail-container");
-        detailContainer.innerHTML = "";
+        const modal = document.getElementById("advent-modal");
+        modal.innerHTML = "";
 
-        // Hitta dagens data
         const todaysData = nisseKalender.find(entry =>
             entry.datum.endsWith(`-${String(day).padStart(2, "0")}`)
         );
 
-        const detail = document.createElement("div");
-        detail.classList.add("advent-detail");
+        const content = document.createElement("div");
+        content.classList.add("advent-modal-content");
 
-        if (todaysData) {
-            let html = "";
+        let html = `<h2>Lucka ${day}</h2>`;
 
-            if (todaysData.hjarteglitter) html += `<p>💛 <strong><span class="underline">Hjärteglitter:</span></strong><br> ${todaysData.hjarteglitter}</p>`;
-
-            detail.innerHTML = html;
+        // --- ENDA DELEN DU VISAR ---
+        if (todaysData?.hjarteglitter) {
+            html += `
+                <p>
+                    💛 <strong><span class="underline">Hjärteglitter:</span></strong><br>
+                    ${todaysData.hjarteglitter}
+                </p>
+            `;
         } else {
-            detail.textContent = `Nissen lämnade inget extra för dag ${day} – men luckan är ändå magisk! ✨`;
+            html += `<p>Ingen hjärteglitter för denna dag ✨</p>`;
         }
 
-        detailContainer.appendChild(detail);
+        content.innerHTML = html;
+
+        const closeBtn = document.createElement("button");
+        closeBtn.textContent = "Stäng";
+        closeBtn.classList.add("close-modal-btn");
+        closeBtn.addEventListener("click", closeModal);
+
+        content.appendChild(closeBtn);
+
+        modal.appendChild(content);
+
+        modal.style.display = "flex";
+        content.focus();
+
+        document.addEventListener("keydown", escCloseModal);
 
     } catch (error) {
         console.error(`❌ Fel vid öppning av lucka ${day}:`, error);
+    }
+}
+
+
+/* ===========================
+        MODAL-STÄNGNING
+=========================== */
+function closeModal() {
+    const modal = document.getElementById("advent-modal");
+    modal.style.display = "none";
+    modal.innerHTML = "";
+    document.removeEventListener("keydown", escCloseModal);
+
+    if (lastFocusedElement) lastFocusedElement.focus();
+}
+
+function escCloseModal(e) {
+    if (e.key === "Escape") {
+        closeModal();
     }
 }

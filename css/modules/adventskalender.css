@@ -119,3 +119,60 @@ color: var(--color-primary);
 .underline {
   text-decoration: underline;
 }
+
+/* Overlay */
+.advent-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.55);
+    backdrop-filter: blur(4px);
+    z-index: 2000;
+
+    display: none;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+/* Innehållsbox */
+.advent-modal-content {
+    background: rgba(255,255,255,0.85);
+    border-radius: 10px;
+    padding: 1.5rem;
+    max-width: 500px;
+    width: 90%;
+    text-align: center;
+    animation: fadeIn .3s ease forwards;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+
+    outline: none; /* För focus-visible */
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: scale(0.9); }
+    to   { opacity: 1; transform: scale(1); }
+}
+
+/* Stäng-knapp */
+.close-modal-btn {
+    margin-top: 1rem;
+    padding: .5rem 1rem;
+    background: #f6e27f;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.close-modal-btn:hover,
+.close-modal-btn:focus-visible {
+    background: #ffeeb0;
+}
+
+/* Nissebrev-styling */
+.nissebrev {
+    font-style: italic;
+    margin-bottom: 1rem;
+}
