@@ -88,6 +88,9 @@ fadeIn(todayLucka);
 // Hämta filmsektion + ikon
 const filmTipsSection = document.getElementById("film-tips");
 const movieBtn = document.getElementById("movieBtn"); // <-- din movies.png
+console.log("movieBtn:", movieBtn);
+console.log("filmTipsSection:", filmTipsSection);
+
 
 console.log("movieBtn är:", movieBtn);
 

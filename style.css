@@ -10,7 +10,7 @@
 @import url("./css/components.css");
 
 /* 4. Hjälpklasser (utilities) */
-@import url("./css/utilities.css");
+@import url("./css/utils.css");
 
 /* 5. Adventskalender */
 @import url("./css/modules/adventskalender.css");
