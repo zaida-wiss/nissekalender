@@ -79,7 +79,7 @@ function buildCalendar(section) {
     try {
         // Rubrik
         const heading = document.createElement("h2");
-        heading.textContent = "Adventskalender";
+        heading.textContent = "Hjärteglitter-adventskalender";
         section.appendChild(heading);
 
         // Grid för luckor
@@ -90,24 +90,34 @@ function buildCalendar(section) {
         const todayDate = getToday()?.split("-")[2];
         const today = Number(todayDate || 24);
 
-        for (let day = 1; day <= 24; day++) {
-            const door = document.createElement("button");
-            door.textContent = day;
-            door.classList.add("advent-door");
+// Skapa en array med 1–24
+const days = Array.from({ length: 24 }, (_, i) => i + 1);
 
-            if (day > today) {
-                door.disabled = true;
-                door.classList.add("door-locked");
-                door.setAttribute("aria-label", `Lucka ${day} är låst`);
-            } else {
-                door.setAttribute("aria-label", `Öppna lucka ${day}`);
-                door.addEventListener("click", () =>
-                    openDoor(day, door)
-                );
-            }
+// Blanda array (Fisher–Yates shuffle)
+for (let i = days.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [days[i], days[j]] = [days[j], days[i]];
+}
 
-            grid.appendChild(door);
-        }
+// Skapa luckor i randomiserad ordning
+days.forEach(day => {
+    const door = document.createElement("button");
+    door.textContent = day;
+    door.classList.add("advent-door");
+
+    if (day > today) {
+        door.disabled = true;
+        door.classList.add("door-locked");
+        door.setAttribute("aria-label", `Lucka ${day} är låst`);
+    } else {
+        door.setAttribute("aria-label", `Öppna lucka ${day}`);
+        door.addEventListener("click", () => openDoor(day, door));
+    }
+
+    grid.appendChild(door);
+});
+
+
 
         // Modal-overlay FÖR LUCKINNEHÅLL — alltid sist
         const modal = document.createElement("div");
