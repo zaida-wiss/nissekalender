@@ -63,6 +63,11 @@ function buildFilmCalendar(section) {
     modal.id = "advent-modal";
     modal.classList.add("advent-modal");
     modal.style.display = "none";
+
+    modal.setAttribute("role","dialog");
+    modal.setAttribute("aria-modal", "true");
+    modal.setAttribute( "aria-labelledby", "modal-title");
+
     section.appendChild(modal);
 
     modal.addEventListener("click", (e) => {
@@ -89,7 +94,7 @@ function openFilmDoor(day, doorBtn) {
     content.classList.add("advent-modal-content");
     content.setAttribute("tabindex", "-1");
 
-    let html = `<h2>Lucka ${day}</h2>`;
+    let html = `<h2 id="modal-title" >Lucka ${day}</h2>`;
 
     if (!film) {
         html += `<p>🎄 Ingen film bakom denna lucka ännu</p>`;
