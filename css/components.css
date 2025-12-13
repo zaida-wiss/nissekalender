@@ -127,7 +127,7 @@ button {
 #movieBtn {
     position: fixed;
     bottom: 20px;
-    right: 20px;
+    right: -5px;
     z-index: 1000;
 }
 
@@ -138,6 +138,22 @@ button {
 }
 
 
+/* Sidokolumn till höger */
+.sidebar-grid {
+    background-color: var(--color-bg);
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 50px;                   /* din önskade marginal */
+    height: 100vh;
+    padding: 1rem 0;
 
+    display: grid;
+    grid-template-rows: auto auto 1fr auto; /* film-btn, advent-btn, spacer, temabollar */
+    align-items: center;
+    justify-items: center;
+
+    z-index: 1600;
+}
 
 

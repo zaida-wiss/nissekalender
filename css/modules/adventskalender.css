@@ -12,7 +12,7 @@
 #adventBtn {
     position: fixed;
     bottom: 100px;   /* ändra efter smak */
-    right: 30px;     /* ändra efter smak */
+    right: 5px;     /* ändra efter smak */
     z-index: 1000;   /* över allt annat */
 }
 
