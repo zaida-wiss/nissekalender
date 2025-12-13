@@ -15,5 +15,8 @@
 /* 5. Filmtips */
 @import url("./css/modules/filmTips.css");
 
-/* 6. Hjälpklasser (utilities) */
+/* 6. Filmtips för barn */
+@import url("./css/modules/barnFilmKalender.css");
+
+/* 7. Hjälpklasser (utilities) */
 @import url("./css/utils.css");

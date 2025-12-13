@@ -15,12 +15,14 @@ import { renderHjarteglitter } from "./components/renderHjarteglitter.js";
 import { renderRecept } from "./components/renderRecept.js";
 import { renderPuzzle } from "./components/renderPuzzle.js";
 import { initAdventCalendar } from "./modules/adventsKalender.js";
+import { initBarnFilmKalender } from "./modules/barnFilmKalender.js";
 import { initFilmGallery } from "./modules/filmGallery.js";
 import { initThemePicker } from "./components/themeSwitcher.js";
 import { setActiveSection, closeAllSections } from "./utils/viewManager.js";
 
 initThemePicker();
 initAdventCalendar();
+initBarnFilmKalender();
 
 // === UTILS ===
 import { fadeIn } from "./utils/fade.js";
@@ -58,7 +60,7 @@ renderToday();
 
 
 // =============================
-// RENDERA DAGENS INNEHÅLL
+// RENDERA DAGENS NISSEBREV
 // =============================
 function renderToday() {
 todayNisseBrev.innerHTML = "";
@@ -74,27 +76,48 @@ fadeIn(todayNisseBrev);
 
 // === FILMGALLERI ===//
 
-// Hämta filmsektion + ikon
+// =============================
+// FEATURE FLAG – FILMKNAPPENS BETEENDE
+// =============================
+// Byt mellan olika lägen utan att röra event listeners
+// "GALLERY" = vanligt filmgalleri
+// "ADVENT"  = adventslucka med barnfilm
+const FILM_MODE = "ADVENT";
+
+
+// Hämta filmsektion
+// =============================
+// FILMKNAPP – ROUTER
+// =============================
+
+// DOM
 const filmTipsSection = document.getElementById("film-tips");
-const movieBtn = document.getElementById("movieBtn"); // <-- din movies.png
+const movieBtn = document.getElementById("movieBtn");
+
 console.log("movieBtn:", movieBtn);
 console.log("filmTipsSection:", filmTipsSection);
 
+// Gemensam öppningsfunktion
+function openFilmContent() {
+  console.log("🎬 Filmknapp – läge:", FILM_MODE);
 
-console.log("movieBtn är:", movieBtn);
+  setActiveSection("film-tips");
 
-// Lägg till klick + tangentbordsstöd
-movieBtn.addEventListener("click", openFilmGallery);
+  if (FILM_MODE === "GALLERY") {
+    initFilmGallery(filmTipsSection);
+  }
+
+  if (FILM_MODE === "ADVENT") {
+    initBarnFilmKalender(filmTipsSection);
+  }
+}
+
+// Klick + tangentbord (WCAG)
+movieBtn.addEventListener("click", openFilmContent);
 
 movieBtn.addEventListener("keydown", (e) => {
   if (e.key === "Enter" || e.key === " ") {
-    e.preventDefault(); // viktigt för space på button
-    openFilmGallery();
+    e.preventDefault();
+    openFilmContent();
   }
 });
-
-function openFilmGallery() {
-  console.log("🎬 öppnar filmgalleri");
-  setActiveSection("film-tips");
-  initFilmGallery(filmTipsSection);
-}

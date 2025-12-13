@@ -12,13 +12,13 @@
 #adventBtn {
     position: fixed;
     bottom: 100px;   /* ändra efter smak */
-    right: 5px;     /* ändra efter smak */
+    right: 0px;     /* ändra efter smak */
     z-index: 1000;   /* över allt annat */
 }
 
 /* Bildens utseende */
 #adventBtn img {
-    width: 40px;     /* eller större */
+    width: 50px;     /* eller större */
     display: block;  /* så ingen textlinje dyker upp */
 }
 
