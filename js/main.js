@@ -114,10 +114,5 @@ function openFilmContent() {
 
 // Klick + tangentbord (WCAG)
 movieBtn.addEventListener("click", openFilmContent);
+console.log("filmknappen reagerade på klick");
 
-movieBtn.addEventListener("keydown", (e) => {
-  if (e.key === "Enter" || e.key === " ") {
-    e.preventDefault();
-    openFilmContent();
-  }
-});

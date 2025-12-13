@@ -1,68 +1,22 @@
 // js/modules/barnFilmKalender.js
+
 import { getToday } from "../data/dayUtils.js";
 import { barnFilmer } from "../data/barnFilmer.js";
-import { setActiveSection, closeAllSections } from "../utils/viewManager.js";
 
 let lastFocusedElement = null;
 
 /* ===========================
-      INIT FILMKALENDERN
+      INIT / RENDER FILMKALENDERN
+   (anropas från main.js)
 =========================== */
-export function initBarnFilmKalender() {
-    const filmBtn = document.getElementById("movieBtn");
-    const filmSection = document.getElementById("film-tips");
-
-    if (!filmBtn || !filmSection) {
-        console.error("❌ Filmkalender: Saknar DOM-element");
+export function initBarnFilmKalender(section) {
+    if (!section) {
+        console.error("❌ Filmkalender: ingen container skickades in");
         return;
     }
 
-    filmBtn.addEventListener("click", () => openFilmCalendar(filmSection));
-    filmBtn.addEventListener("keydown", (e) => {
-        if (e.key === "Enter" || e.key === " ") {
-            e.preventDefault();
-            openFilmCalendar(filmSection);
-        }
-    });
-}
-
-
-/* ===========================
-      ÖPPNA FILMKALENDERN
-=========================== */
-function openFilmCalendar(section) {
-    try {
-        lastFocusedElement = document.activeElement;
-
-        setActiveSection("film-tips");
-
-        section.innerHTML = "";
-        buildFilmCalendar(section);
-
-        const firstBtn = section.querySelector("button");
-        if (firstBtn) firstBtn.focus();
-
-        document.addEventListener("keydown", handleEsc);
-
-    } catch (error) {
-        console.error("❌ Fel vid öppning av filmkalender:", error);
-    }
-}
-
-
-/* ===========================
-      STÄNG FILMKALENDERN
-=========================== */
-function closeFilmCalendar() {
-    closeAllSections();
-    document.removeEventListener("keydown", handleEsc);
-    if (lastFocusedElement) lastFocusedElement.focus();
-}
-
-function handleEsc(e) {
-    if (e.key === "Escape") {
-        closeFilmCalendar();
-    }
+    section.innerHTML = "";
+    buildFilmCalendar(section);
 }
 
 
@@ -70,7 +24,7 @@ function handleEsc(e) {
         BYGG FILMKALENDERN
 =========================== */
 function buildFilmCalendar(section) {
-    // Rubrik
+    // Rubrik (valfri – kan fyllas senare)
     const heading = document.createElement("h2");
     heading.textContent = "";
     section.appendChild(heading);
@@ -82,12 +36,9 @@ function buildFilmCalendar(section) {
 
     const todayDate = Number(getToday()?.split("-")[2] || 24);
 
-    // Skapa & blanda 1–24
+    // Skapa & blanda dagarna 1–24
     const days = Array.from({ length: 24 }, (_, i) => i + 1);
-    for (let i = days.length - 1; i > 0; i--) {
-        const j = Math.floor(Math.random() * (i + 1));
-        [days[i], days[j]] = [days[j], days[i]];
-    }
+    shuffleArray(days);
 
     // Skapa luckor
     days.forEach(day => {
@@ -127,6 +78,8 @@ function openFilmDoor(day, doorBtn) {
     doorBtn.classList.add("door-open");
 
     const modal = document.getElementById("advent-modal");
+    if (!modal) return;
+
     modal.innerHTML = "";
 
     const date = `2025-12-${String(day).padStart(2, "0")}`;
@@ -134,6 +87,7 @@ function openFilmDoor(day, doorBtn) {
 
     const content = document.createElement("div");
     content.classList.add("advent-modal-content");
+    content.setAttribute("tabindex", "-1");
 
     let html = `<h2>Lucka ${day}</h2>`;
 
@@ -143,19 +97,22 @@ function openFilmDoor(day, doorBtn) {
         html += `
             <h3>${film.title}</h3>
             <p><strong>Längd:</strong> ${film.duration_minutes}</p>
-            ${film.bild ? `<img src="${film.bild}" alt="Affisch för ${film.title}">` : ""}
             <p>${film.teaser_text}</p>
 
+            ${film.bild ? `<img src="${film.bild}" alt="Affisch för ${film.title}">` : ""}
+
+            ${film.film ? `<p><a href="${film.film}" target="_blank" rel="noopener">🎬 Se filmen</a></p>` : ""}
+
             <ul>
-            ${film.curiosity_questions.map(q => `<li>${q}</li>`).join("")}
+                ${film.curiosity_questions.map(q => `<li>${q}</li>`).join("")}
             </ul>
-            
-            ${film.film ? `<p><a href="${film.film}" target="_blank">🎬 Se filmen</a></p>` : ""}
         `;
     }
 
     content.innerHTML = html;
     modal.appendChild(content);
+
+    lastFocusedElement = document.activeElement;
 
     modal.style.display = "flex";
     content.focus();
@@ -169,12 +126,32 @@ function openFilmDoor(day, doorBtn) {
 =========================== */
 function closeModal() {
     const modal = document.getElementById("advent-modal");
+    if (!modal) return;
+
     modal.style.display = "none";
     modal.innerHTML = "";
+
     document.removeEventListener("keydown", escCloseModal);
-    if (lastFocusedElement) lastFocusedElement.focus();
+
+    if (lastFocusedElement) {
+        lastFocusedElement.focus();
+        lastFocusedElement = null;
+    }
 }
 
 function escCloseModal(e) {
-    if (e.key === "Escape") closeModal();
+    if (e.key === "Escape") {
+        closeModal();
+    }
+}
+
+
+/* ===========================
+        HJÄLPFUNKTIONER
+=========================== */
+function shuffleArray(array) {
+    for (let i = array.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [array[i], array[j]] = [array[j], array[i]];
+    }
 }
