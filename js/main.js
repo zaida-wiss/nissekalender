@@ -36,7 +36,7 @@ let today = getToday();
 // =============================
 // DOM-REFERENSER
 // =============================
-const todayLucka = document.getElementById("todayLucka");
+const todayNisseBrev = document.getElementById("todayNisseBrev");
 const startScreen = document.getElementById("startScreen");
 const openBtn = document.getElementById("openLuckaBtn");
 
@@ -50,7 +50,7 @@ openBtn.disabled = true;
 
 
 setTimeout(() => {
-setActiveSection("todayLucka");
+setActiveSection("todayNisseBrev");
 renderToday();
 
 }, 1000);
@@ -61,17 +61,14 @@ renderToday();
 // RENDERA DAGENS INNEHÅLL
 // =============================
 function renderToday() {
-todayLucka.innerHTML = "";
-
+todayNisseBrev.innerHTML = "";
 
 const todaysLetter = nisseBrev.find(entry => entry.datum === today);
-const todaysExtra = nisseKalender.find(entry => entry.datum === today);
+
+todayNisseBrev.appendChild(renderBrevet(today, todaysLetter));
 
 
-// --- Brev (barnens del) ---
-todayLucka.appendChild(renderBrevet(today, todaysLetter));
-
-fadeIn(todayLucka);
+fadeIn(todayNisseBrev);
 }
 
 

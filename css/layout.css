@@ -42,8 +42,7 @@ body {
 }
 
 /* Wrapper för dagens lucka */
-#todayLucka {
-    display: none;
+#todayNisseBrev {
     position:relative;
     margin: var(--space-lg) 0;
     width: 90%;
@@ -55,11 +54,12 @@ body {
     gap: var(--space-md) var(--space-lg);
 }
 
-#todayLucka.hidden {
+.app-section {
     display: none;
 }
 
-#todayLucka.visible {
+.app-section.is-active {
     display: grid;
 }
+
 

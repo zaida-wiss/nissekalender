@@ -74,14 +74,6 @@ button {
     transform: scale(0.98);
 }
 
-/* streck som delar av rubrik från text (design)*/
-.nisse-divider {
-    width: 80%;               /* gör den centrerad och responsiv */
-    margin: 2px auto 5px;   /* centrerar och ger luft */
-    border: none;             /* ta bort standard-stil */
-    border-top: 2px solid rgba(255, 255, 255, 0.7);  /* snygg linje */
-}
-
 /* --------------------------------------------------------------------------
 |                                                                           |
 |   BYT TEMA: VÄLJ EN NY FÄRG                                               |

@@ -28,7 +28,16 @@
     outline-offset: 4px;
 }
 
-
+/* <====== KALENDER-SEKTIONEN ======> */
+.advent-kalender {
+  display: none;
+  position: absolute;
+  width: 90%; /* ← lämna plats för ikonremsan */
+  background-image: url("../../bilder/adventskalender.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
 /* GRID */
 .advent-grid {
   display: grid;
@@ -41,19 +50,6 @@
   width: 60%;
   max-width: 330px;    /* begränsa max-bredden */
 }
-
-
-.advent-kalender {
-  display: none;
-  position: absolute;
-  width: 90%; /* ← lämna plats för ikonremsan */
-  background-image: url("../../bilder/adventskalender.webp");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-
 /* LUCKOR */
 .advent-door {
   display: flexbox;
@@ -98,6 +94,7 @@
   100% { transform: rotateY(0); }
 }
 
+/* <====== KORTET MED MEDDELANDE FRÅN LUCKAN =======>
 /* Textdelen under kalendern */
 #advent-detail-container {
   background-color: rgb(233, 235, 218);
@@ -107,7 +104,6 @@
   position: relative;
   right: 0px;
 }
-
 .advent-detail {
   opacity: 0;
   animation: fadeIn 0.6s ease forwards;
