@@ -40,7 +40,7 @@ export const barnFilmer =[
 },
   {
     "date": "2025-12-04",
-    "title": "Nalle Puh – En mycket glad Puh-år",
+    "title": "Nalle Puh?",
     "duration_minutes": 68,
     "film":"",
     "bild":"",
@@ -53,7 +53,7 @@ export const barnFilmer =[
   },
   {
     "date": "2025-12-05",
-    "title": "Mamma Mu åker bob",
+    "title": "",
     "duration_minutes": 78,
     "film":"",
     "bild":"",
@@ -66,7 +66,7 @@ export const barnFilmer =[
   },
   {
     "date": "2025-12-06",
-    "title": "Mumin – Trollvinter i Mumindalen",
+    "title": "",
     "duration_minutes": 53,
     "film":"",
     "bild":"",

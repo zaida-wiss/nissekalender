@@ -177,7 +177,18 @@ Projektet har utvecklats iterativt med fokus på:
 AI har använts som stöd för resonemang och felsökning, men all kod har granskats, anpassats och testats manuellt.
 
 ---
+## 🧠 Design decisions
 
+Projektet är medvetet byggt utan externa ramverk för att tydligt visa förståelse för:
+- DOM-manipulation
+- händelsehantering
+- modulär JavaScript-struktur
+
+Arkitekturen är uppdelad så att `main.js` hanterar navigation och flöde, medan moduler och komponenter fokuserar på initiering respektive rendering.
+
+Tillgänglighet har prioriterats tidigt i utvecklingen och har påverkat val av semantiska element, modal-implementation och fokuslogik.
+
+---
 ## 🧾 Sammanfattning
 
 Projektet visar att studenten kan:
@@ -189,5 +200,6 @@ Projektet visar att studenten kan:
 - reflektera över tekniska val
 
 Projektet uppfyller därmed **kursens examinerande mål**.
+Projektet innehåller exempel på testbar kodstruktur.
 
 
