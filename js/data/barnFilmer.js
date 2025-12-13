@@ -39,57 +39,57 @@ export const barnFilmer =[
   ]
 },
   {
-    "date": "2025-12-04",
-    "title": "Nalle Puh?",
-    "duration_minutes": 68,
-    "film":"",
-    "bild":"",
-    "teaser_text": "I Sjumilaskogen händer det något under varje årstid – och Nalle Puh och hans vänner upptäcker hur viktigt det är att vara snäll.",
-    "curiosity_questions": [
-      "Vad gör dig glad när det är vinter?",
-      "Hur är en riktigt bra vän?",
-      "Vad tror du Puh tycker mest om – honung eller sina vänner?"
-    ]
-  },
+  "date": "2025-12-04",
+  "title": "Pettson och Findus – Tomtemaskinen",
+  "duration_minutes": "1h 14min",
+  "film": "https://www.tv4play.se/video/5bacd28f4e7a739ed454/pettson-and-findus-tomtemaskinen",
+  "bild": "https://i-viaplay-com.akamaized.net/viaplay-prod/107/196/1567583086-3011bc77ab74f82ded46528ff0659e2cf7279f39.jpg?width=400&height=600",
+  "teaser_text": "Findus vill så gärna att tomten ska komma på julafton. Pettson vill göra honom glad – så glad att han börjar bygga en alldeles egen tomtemaskin. Men allt blir inte riktigt som planerat.",
+  "curiosity_questions": [
+    "Har du önskat dig något jättemycket någon gång?",
+    "Vad gör man när något inte blir som man tänkt?",
+    "Hur visar Pettson att han bryr sig om Findus?"
+  ]
+},
+{
+  "date": "2025-12-05",
+  "title": "Kajsa Kavat",
+  "duration_minutes": "33min",
+  "film": "https://www.tv4play.se/video/ad32d7234865b96d99ff/kajsa-kavat",
+  "bild": "https://img-cdn.sfanytime.com/COVERM/9c721f4c-470b-4185-b674-a8f100c21e77_COVERM_SV.jpg?ar=0.692&fit=crop&fm=pjpg&w=415&s=d657f30354382c14c7b72d1319ec3d0b",
+  "teaser_text": "Kajsa Kavat är liten men modig. När livet förändras måste hon våga ta ansvar, hjälpa andra och tro på sin egen styrka – även när det känns pirrigt.",
+  "curiosity_questions": [
+    "Har du någon gång vågat ta ansvar fast du var liten?",
+    "Hur känns det i kroppen när man klarar något själv?",
+    "Vem kan man be om hjälp när man behöver det?"
+  ]
+},
+ {
+  "date": "2025-12-06",
+  "title": "Familjen Jul i Tomteland",
+  "duration_minutes": "1h 25min",
+  "film": "https://www.tv4play.se/program/305c6076cab4690aee6d/familjen-jul-i-tomteland",
+  "bild": "https://nfimageservice.azureedge.net/image/61dd7d76-843e-4c8f-8e8f-4da6317ae223?width=400",
+  "teaser_text": "Familjen Jul råkar hamna mitt i Tomteland där julen är i fara. Tillsammans måste de samarbeta, lita på varandra och hjälpa tomtarna att rädda julen – innan det är för sent.",
+  "curiosity_questions": [
+    "Hur är det att komma till en plats där allt är annorlunda?",
+    "Vad händer när man måste samarbeta som familj?",
+    "Vad tror du är viktigast för att julen ska bli bra?"
+  ]
+},
   {
-    "date": "2025-12-05",
-    "title": "",
-    "duration_minutes": 78,
-    "film":"",
-    "bild":"",
-    "teaser_text": "Mamma Mu vill prova något nytt – men alla tycker inte att det är en bra idé. Ska hon våga ändå?",
-    "curiosity_questions": [
-      "Finns det något du vill prova men tycker är lite läskigt?",
-      "Hur känns det när man vågar?",
-      "Vem hejar på dig när du testar något nytt?"
-    ]
-  },
-  {
-    "date": "2025-12-06",
-    "title": "",
-    "duration_minutes": 53,
-    "film":"",
-    "bild":"",
-    "teaser_text": "Mumin vaknar mitt i vintern – när allt är tyst, vitt och fullt av hemligheter.",
-    "curiosity_questions": [
-      "Hur tror du Mumindalen ser ut på vintern?",
-      "Vad gör man när alla andra sover?",
-      "Kan vintern vara snäll fast den är kall?"
-    ]
-  },
-  {
-    "date": "2025-12-07",
-    "title": "Ernest & Celestine – Vintersagor",
-    "duration_minutes": 45,
-    "film":"",
-    "bild":"",
-    "teaser_text": "Två väldigt olika vänner delar vintern tillsammans – med värme, skratt och omtanke.",
-    "curiosity_questions": [
-      "Kan man vara vänner även om man är olika?",
-      "Hur visar man att man tycker om någon?",
-      "Vad gör vintern mysig tycker du?"
-    ]
-  },
+  "date": "2025-12-07",
+  "title": "Lotta på Bråkmakargatan",
+  "duration_minutes": 80,
+  "film": "https://www.tv4play.se/program/232ac410519c059e5c13/lotta-pa-brakmakargatan",
+  "bild": "https://img-cdn.sfanytime.com/COVERM/6047d9f2-2b51-4654-b9b9-a54400b76621_COVERM_SV.jpg?ar=0.692&fit=crop&fm=pjpg&w=415&s=3a1f1ebdf0b9a9068dc991be7825618d",
+  "teaser_text": "Lotta är liten men bestämd. När hon tycker att något är orättvist, tråkigt eller bara fel, då gör hon något åt det – på sitt alldeles egna sätt.",
+  "curiosity_questions": [
+    "Har du känt någon gång att du vill bestämma själv?",
+    "Vad kan man göra när man blir arg men ändå vill vara snäll?",
+    "Vad gillar du mest med Lotta?"
+  ]
+},
   {
     "date": "2025-12-08",
     "title": "The Snowman",
