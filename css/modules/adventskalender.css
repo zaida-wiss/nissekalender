@@ -32,27 +32,26 @@
 /* GRID */
 .advent-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(60px, 1fr));
-  gap: var(--space-sm);
+  grid-template-columns: repeat(4, minmax(70px, 200px));
+  padding-right:50px;
+  padding-left: 20px;
+  gap: var(--space-sm) var(--space-sm);
   margin-top: 0;        /* vi centrerar via flex nu */
-  width: 100%;
-  max-width: 320px;     /* testa 260–340px beroende på din bild */
+  width: 60%;
+  max-width: 330px;    /* begränsa max-bredden */
 }
 
 .advent-kalender {
-  position: relative;
-  min-height: 100vh;
-  padding: var(--space-md);
-  border-radius: var(--radius-lg);
-  width: 100%;
+  position: fixed;
 
+  width: 90%; /* ← lämna plats för ikonremsan */
   background-image: url("../../bilder/adventskalender.webp");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 
   /* NYTT – centrera griden på bilden */
-  display: flex;
+  grid-template-columns: repeat(4, 1fr);
   justify-content: center;   /* horisontellt */
   align-items: center;       /* vertikalt   */
 }
@@ -60,14 +59,17 @@
 
 /* LUCKOR */
 .advent-door {
-  padding: 0.6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-items: left;
  aspect-ratio: 1 / 1;  /* alltid kvadratiska luckor */
-min-height: 50px;
-  background: rgba(199, 116, 15, 0.688);
+  min-height: 40px;
+  background: linear-gradient(135deg, rgba(199, 116, 15, 0.688), rgba(212, 124, 10, 0.4));
   backdrop-filter: blur(6px);
   border-radius: 8px;
   border: 1px solid rgba(86, 35, 13, 0.505);
-
+  padding-right: var(--space-sm);
   color: #1f1b03;
   font-weight: bold;
   font-size: 1.4rem;
@@ -151,7 +153,7 @@ color: var(--color-primary);
     border-radius: 10px;
     padding: 1.5rem;
     max-width: 250px;
-    width: 900%;
+    width: 100%;
     text-align: center;
     animation: fadeIn .3s ease forwards;
     box-shadow: 0 8px 20px rgba(0,0,0,0.4);
@@ -166,7 +168,7 @@ color: var(--color-primary);
     from { opacity: 0; transform: scale(0.9); }
     to   { opacity: 1; transform: scale(1); }
 }
-
+/*
 /* Stäng-knapp */
 .close-modal-btn {
     margin-top: 1rem;
@@ -181,4 +183,3 @@ color: var(--color-primary);
 .close-modal-btn:focus-visible {
     background: #ffeeb0;
 }
-

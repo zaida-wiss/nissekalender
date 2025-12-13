@@ -11,8 +11,8 @@ html, body {
 
 body {
     display: grid;
-
 }
+
 .hero-bg {
     position: fixed;
     top: 0;
@@ -28,12 +28,12 @@ body {
 
 
 .container-nisse {
+    padding-right: 60px;
     display: flex;
     justify-content: center;
     display: grid;
     justify-items: center;
     margin: 0;
-    padding: 0;
 }
 
 .card {
