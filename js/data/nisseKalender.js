@@ -1,5 +1,5 @@
 console.log("nisseKalender.js laddas..");
-export const dusseKalender = [
+export const nisseKalender = [
    {
     datum: "2025-11-30",
     bus: "Färgad mjölk, mjölsnöängel",
