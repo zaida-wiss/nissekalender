@@ -4,7 +4,7 @@
   "description": "Nissekalender är en interaktiv, barnvänlig och tillgänglig julkalender byggd som en **Single Page Application (SPA)** med **HTML, CSS och JavaScript (ES-moduler)** – helt utan externa ramverk.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "test": "vitest run"
   },
   "repository": {
     "type": "git",
@@ -13,7 +13,7 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "type": "commonjs",
+  "type": "module",
   "bugs": {
     "url": "https://github.com/zaida-wiss/nissekalender/issues"
   },

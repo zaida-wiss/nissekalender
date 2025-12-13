@@ -199,7 +199,9 @@ Projektet visar att studenten kan:
 - använda Git i praktiken
 - reflektera över tekniska val
 
+
+
 Projektet uppfyller därmed **kursens examinerande mål**.
 Projektet innehåller exempel på testbar kodstruktur.
-
+“Projektet har grundläggande enhetstester med Vitest för ren JavaScript-logik.”
 
