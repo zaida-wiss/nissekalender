@@ -108,15 +108,15 @@ function openFilmDoor(day, doorBtn) {
         html += `
             <h3>${film.title}</h3>
             <p><strong>Längd:</strong> ${film.duration_minutes}</p>
-            <p>${film.teaser_text}</p>
-
             ${film.bild ? `<img src="${film.bild}" alt="Affisch för ${film.title}">` : ""}
-
-            ${film.film ? `<p><a href="${film.film}" target="_blank" rel="noopener">🎬 Se filmen</a></p>` : ""}
+            <p>${film.teaser_text}</p>
 
             <ul>
                 ${film.curiosity_questions.map(q => `<li>${q}</li>`).join("")}
             </ul>
+
+            ${film.film ? `<p><a href="${film.film}" target="_blank" rel="noopener">🎬 Se filmen</a></p>` : ""}
+
         `;
     }
 

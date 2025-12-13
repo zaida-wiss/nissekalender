@@ -94,8 +94,8 @@ export const barnFilmer =[
     "date": "2025-12-08",
     "title": "The Snowman",
     "duration_minutes": 26,
-    "film":"",
-    "bild":"",
+    "film":"https://www.youtube.com/watch?v=5A3THighARU",
+    "bild":"https://m.media-amazon.com/images/I/A1ZbpjiOAeL._AC_UF1000,1000_QL80_.jpg",
     "teaser_text": "En pojke bygger en snögubbe – och plötsligt händer något alldeles magiskt.",
     "curiosity_questions": [
       "Vad skulle hända om din snögubbe vaknade?",

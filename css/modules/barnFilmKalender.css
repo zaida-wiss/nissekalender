@@ -89,7 +89,7 @@
 
 /* ====== MODAL CONTENT ====== */
 .film-kalender .advent-modal-content {
-  background: rgba(255,255,255,0.9);
+  background: rgba(158, 156, 155, 0.385);
   margin-right: 50px;
   border-radius: 12px;
   padding: 1.5rem;
@@ -126,19 +126,4 @@
 /* ====== UNDERSTRUKEN RUBRIK ====== */
 .film-kalender .underline {
   text-decoration: underline;
-}
-
-/* ====== STÄNG-KNAPP ====== */
-.film-kalender .close-modal-btn {
-  margin-top: 1rem;
-  padding: .5rem 1rem;
-  background: #f6e27f;
-  border: none;
-  border-radius: 6px;
-  cursor: pointer;
-}
-
-.film-kalender .close-modal-btn:hover,
-.film-kalender .close-modal-btn:focus-visible {
-  background: #ffeeb0;
 }
