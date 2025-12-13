@@ -80,7 +80,7 @@ export const barnFilmer =[
   {
   "date": "2025-12-07",
   "title": "Lotta på Bråkmakargatan",
-  "duration_minutes": 80,
+  "duration_minutes": "1h 15 min",
   "film": "https://www.tv4play.se/program/232ac410519c059e5c13/lotta-pa-brakmakargatan",
   "bild": "https://img-cdn.sfanytime.com/COVERM/6047d9f2-2b51-4654-b9b9-a54400b76621_COVERM_SV.jpg?ar=0.692&fit=crop&fm=pjpg&w=415&s=3a1f1ebdf0b9a9068dc991be7825618d",
   "teaser_text": "Lotta är liten men bestämd. När hon tycker att något är orättvist, tråkigt eller bara fel, då gör hon något åt det – på sitt alldeles egna sätt.",
@@ -93,7 +93,7 @@ export const barnFilmer =[
   {
     "date": "2025-12-08",
     "title": "The Snowman",
-    "duration_minutes": 26,
+    "duration_minutes": "26min",
     "film":"https://www.youtube.com/watch?v=5A3THighARU",
     "bild":"https://m.media-amazon.com/images/I/A1ZbpjiOAeL._AC_UF1000,1000_QL80_.jpg",
     "teaser_text": "En pojke bygger en snögubbe – och plötsligt händer något alldeles magiskt.",
@@ -105,17 +105,17 @@ export const barnFilmer =[
   },
   {
     "date": "2025-12-09",
-    "title": "Paddington",
-    "duration_minutes": 95,
-    "film":"",
-    "bild":"",
-    "teaser_text": "En liten björn kommer till en stor stad – och letar efter ett hem och någon som bryr sig.",
+    "title": "Mamma Mu och Kråkan",
+    "duration_minutes": 65,
+    "film": "https://www.tv4play.se/program/60dd368e30ac5c021b25/mamma-mu-and-krakan",
+    "bild": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Mamma-mu-och-krakan.jpg/1200px-Mamma-mu-och-krakan.jpg",
+    "teaser_text": "Mamma Mu är nyfiken på världen och vill prova nya saker. Kråkan tycker ofta att hon är konstig – men trots olikheter håller de ihop och lär sig om vänskap, mod och att våga vara sig själv.",
     "curiosity_questions": [
-      "Hur känns det att vara ny någonstans?",
-      "Vad gör man för att känna sig hemma?",
-      "Hur kan man vara snäll mot någon som är ny?"
-    ]
-  },
+    "Är det okej att vilja göra saker på sitt eget sätt?",
+    "Hur kan två som är olika ändå vara vänner?",
+    "När har du varit modig som Mamma Mu?"
+  ]
+},
   {
     "date": "2025-12-10",
     "title": "Kalle Ankas klassiska julfavoriter",
