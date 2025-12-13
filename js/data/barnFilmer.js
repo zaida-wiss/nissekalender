@@ -106,7 +106,7 @@ export const barnFilmer =[
   {
     "date": "2025-12-09",
     "title": "Mamma Mu och Kråkan",
-    "duration_minutes": 65,
+    "duration_minutes": "8 min & 13 avsnitt",
     "film": "https://www.tv4play.se/program/60dd368e30ac5c021b25/mamma-mu-and-krakan",
     "bild": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Mamma-mu-och-krakan.jpg/1200px-Mamma-mu-och-krakan.jpg",
     "teaser_text": "Mamma Mu är nyfiken på världen och vill prova nya saker. Kråkan tycker ofta att hon är konstig – men trots olikheter håller de ihop och lär sig om vänskap, mod och att våga vara sig själv.",
@@ -119,7 +119,7 @@ export const barnFilmer =[
   {
     "date": "2025-12-10",
     "title": "Kalle Ankas klassiska julfavoriter",
-    "duration_minutes": 60,
+    "duration_minutes": "8 min & 13 avsnitt",
     "film":"",
     "bild":"",
     "teaser_text": "Gamla favoriter, tokiga upptåg och massor av julkänsla tillsammans.",
