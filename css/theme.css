@@ -49,12 +49,6 @@
 }
 
 
-/* Bakgrund */
-body {
-    background: linear-gradient(45deg, lightgreen, rgb(2, 43, 2), darkgreen);
-    font-family: 'Arial', sans-serif;
-}
-
 /* Fade animation */
 .fade-in {
     animation: fadeIn 0.8s ease-out forwards;

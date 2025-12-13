@@ -79,7 +79,7 @@ function buildCalendar(section) {
     try {
         // Rubrik
         const heading = document.createElement("h2");
-        heading.textContent = "Hjärteglitter-adventskalender";
+        heading.textContent = ""; //Rubriktext här
         section.appendChild(heading);
 
         // Grid för luckor
