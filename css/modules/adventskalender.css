@@ -32,6 +32,7 @@
 /* GRID */
 .advent-grid {
   display: grid;
+  justify-items: center;
   grid-template-columns: repeat(4, minmax(70px, 200px));
   padding-right:50px;
   padding-left: 20px;
@@ -41,28 +42,21 @@
   max-width: 330px;    /* begränsa max-bredden */
 }
 
+
 .advent-kalender {
   display: none;
-  position: fixed;
+  position: absolute;
   width: 90%; /* ← lämna plats för ikonremsan */
   background-image: url("../../bilder/adventskalender.webp");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-
-  /* NYTT – centrera griden på bilden */
-  grid-template-columns: repeat(4, 1fr);
-  justify-content: center;   /* horisontellt */
-  align-items: center;       /* vertikalt   */
 }
 
 
 /* LUCKOR */
 .advent-door {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  justify-items: left;
+  display: flexbox;
  aspect-ratio: 1 / 1;  /* alltid kvadratiska luckor */
   min-height: 40px;
   background: linear-gradient(135deg, rgba(199, 116, 15, 0.688), rgba(212, 124, 10, 0.4));
