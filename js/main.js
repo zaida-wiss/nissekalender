@@ -22,7 +22,7 @@ import { setActiveSection, closeAllSections } from "./utils/viewManager.js";
 
 initThemePicker();
 initAdventCalendar();
-initBarnFilmKalender();
+
 
 // === UTILS ===
 import { fadeIn } from "./utils/fade.js";

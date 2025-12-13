@@ -99,6 +99,9 @@
   box-shadow: 0 8px 20px rgba(0,0,0,0.4);
   animation: fadeIn .3s ease forwards;
   outline: none;
+    max-height: 85vh;          /* viktigast */
+  overflow-y: auto;          /* 👈 tillåter scroll */
+  overscroll-behavior: contain;
 }
 
 .film-kalender .advent-modal-content h2,

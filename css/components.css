@@ -1,5 +1,5 @@
 /* Rubriker i komponenter */
-h1, h2, h3, h4, p {
+h1, h2, h3, h4, p, li {
     font-family: "Indie Flower", cursive;
     font-weight: 400;
     color: var(--color-text);
