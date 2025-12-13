@@ -71,16 +71,6 @@ const todaysExtra = nisseKalender.find(entry => entry.datum === today);
 // --- Brev (barnens del) ---
 todayLucka.appendChild(renderBrevet(today, todaysLetter));
 
-
-// --- Bus / Uppdrag / Hjärteglitter / Recept / Pussel ---
-if (todaysExtra) {
-if (todaysExtra.bus) todayLucka.appendChild(renderBus(todaysExtra));
-if (todaysExtra.uppdrag) todayLucka.appendChild(renderUppdrag(todaysExtra));
-if (todaysExtra.hjarteglitter) todayLucka.appendChild(renderHjarteglitter(todaysExtra));
-if (todaysExtra.recept) todayLucka.appendChild(renderRecept(todaysExtra));
-if (todaysExtra.pussel) todayLucka.appendChild(renderPuzzle(todaysExtra));
-}
-
 fadeIn(todayLucka);
 }
 

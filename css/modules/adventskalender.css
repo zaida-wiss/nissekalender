@@ -42,8 +42,8 @@
 }
 
 .advent-kalender {
+  display: none;
   position: fixed;
-
   width: 90%; /* ← lämna plats för ikonremsan */
   background-image: url("../../bilder/adventskalender.webp");
   background-size: cover;
@@ -141,7 +141,6 @@ color: var(--color-primary);
     background: rgba(0,0,0,0.55);
     backdrop-filter: blur(4px);
     z-index: 2000;
-
     display: none;
     justify-content: center;
     align-items: center;
@@ -150,6 +149,7 @@ color: var(--color-primary);
 /* Innehållsbox */
 .advent-modal-content {
     background: rgba(255,255,255,0.85);
+    margin-right: 50px;
     border-radius: 10px;
     padding: 1.5rem;
     max-width: 250px;
