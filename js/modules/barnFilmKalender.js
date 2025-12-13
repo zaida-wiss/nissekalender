@@ -15,8 +15,14 @@ export function initBarnFilmKalender(section) {
         return;
     }
 
+    // 👇 BYGG BARA OM DEN INTE REDAN FINNS
+    if (section.dataset.initialized === "true") {
+        return;
+    }
+
     section.innerHTML = "";
     buildFilmCalendar(section);
+    section.dataset.initialized = "true";
 }
 
 
