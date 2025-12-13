@@ -118,15 +118,15 @@ export const barnFilmer =[
 },
   {
     "date": "2025-12-10",
-    "title": "Kalle Ankas klassiska julfavoriter",
-    "duration_minutes": "8 min & 13 avsnitt",
-    "film":"",
-    "bild":"",
-    "teaser_text": "Gamla favoriter, tokiga upptåg och massor av julkänsla tillsammans.",
-    "curiosity_questions": [
-      "Vilken figur tror du kommer göra bort sig idag?",
-      "Vad brukar ni göra tillsammans i jul?",
-      "Vad är det roligaste med jul tycker du?"
-    ]
-  }
+"title": "Rasmus på luffen",
+  "duration_minutes": 95,
+  "film": "https://www.tv4play.se/program/05315f503674a72f5dec/rasmus-pa-luffen",
+  "bild": "https://upload.wikimedia.org/wikipedia/en/b/b3/Rasmus_p%C3%A5_luffen.jpg",
+  "teaser_text": "Rasmus längtar efter att höra till. När han rymmer från barnhemmet möter han Oskar, och tillsammans ger de sig ut på vägarna. En berättelse om vänskap, mod och att hitta sin plats i världen.",
+  "curiosity_questions": [
+    "Vad betyder det att höra hemma någonstans?",
+    "Hur känns det när någon väljer just dig?",
+    "Vad tror du gör Oskar till en bra vän för Rasmus?"
+  ]
+}
 ]
