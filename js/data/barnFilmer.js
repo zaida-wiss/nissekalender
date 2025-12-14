@@ -119,7 +119,7 @@ export const barnFilmer =[
   {
     "date": "2025-12-10",
 "title": "Rasmus på luffen",
-  "duration_minutes": 95,
+  "duration_minutes": "1h 40 min",
   "film": "https://www.tv4play.se/program/05315f503674a72f5dec/rasmus-pa-luffen",
   "bild": "https://upload.wikimedia.org/wikipedia/en/b/b3/Rasmus_p%C3%A5_luffen.jpg",
   "teaser_text": "Rasmus längtar efter att höra till. När han rymmer från barnhemmet möter han Oskar, och tillsammans ger de sig ut på vägarna. En berättelse om vänskap, mod och att hitta sin plats i världen.",
