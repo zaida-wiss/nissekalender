@@ -167,5 +167,45 @@ export const barnFilmer =[
     "Vad innebär det att ta ansvar för något viktigt?",
     "Vad tror du är svårast med att vara tomte?"
   ]
+},
+{
+  "date": "2025-12-14",
+  "title": "David och tomtenissarna",
+  "duration_minutes": 97,
+  "film": "https://www.netflix.com/watch/81416534?trackId=284347283&tctx=7%2C15%2Cf66e8dee-a58c-4ce5-a71b-e2a88c40b3a5%2Cf66e8dee-a58c-4ce5-a71b-e2a88c40b3a5%7C%3DeyJwYWdlSWQiOiI3ZjU2ZmVjZC0xMWNmLTRmYjQtODAwNi1mZWQyYWRlMjdiYjcvMS8vZmFtaWxqZW4gY2xhdXMvMC8wIiwibG9jYWxTZWN0aW9uSWQiOiIyIn0%3D%2C%2C%2C%2CtitlesResults%2C81416534%2CVideo%3A81416534%2CminiDpPlayButton",
+  "bild": "https://m.media-amazon.com/images/M/MV5BZDZiZTVlZjgtNGVjZC00NGVjLTgxNzUtNTgyMTQ2ODU4ZmVhXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+  "teaser_text": "David råkar snubbla in i tomtarnas hemliga värld och upptäcker att julen står på spel. Tillsammans med tomtenissarna måste han våga ta ansvar, samarbeta och tro på sig själv.",
+  "curiosity_questions": [
+    "Hur känns det att plötsligt behövas till något viktigt?",
+    "Vad är lättare att göra tillsammans än ensam?",
+    "Vad tror du tomtenissarna är bäst på?"
+  ]
+},
+{
+  "date": "2025-12-15",
+  "title": "Jakten på julen (A Boy Called Christmas)",
+  "duration_minutes": 60,
+  "film": "https://www.netflix.com/watch/81029733?trackId=284347283&tctx=3%2C17%2Cc8d4be67-c67a-4f5a-a248-3d6c84b29190%2Cc8d4be67-c67a-4f5a-a248-3d6c84b29190%7C%3DeyJwYWdlSWQiOiI3ZjU2ZmVjZC0xMWNmLTRmYjQtODAwNi1mZWQyYWRlMjdiYjcvMS8vYmFiZS8wLzAiLCJsb2NhbFNlY3Rpb25JZCI6IjIifQ%3D%3D%2C%2C%2C%2C%2C%2CVideo%3A81029733%2CdetailsPagePlayButton",
+  "bild": "https://www.imdb.com/title/tt10187208/mediaviewer/rm3581472769/?ref_=tt_ov_i",
+  "teaser_text": "Nikolas ger sig ut på ett modigt äventyr för att hitta sin pappa och upptäcker hur julen en gång började. En berättelse om hopp, vänlighet och att våga tro – även när allt känns mörkt.",
+  "curiosity_questions": [
+    "Vad ger dig hopp när något känns svårt?",
+    "Tror du att mod betyder att man inte är rädd?",
+    "Vad tror du gör julen viktig på riktigt?"
+  ]
+},
+{
+  "date": "2025-12-16",
+  "title": "Scrooge – En julsaga",
+  "duration_minutes": 97,
+  "film": "https://www.netflix.com/Kids/search?q=ensam%20hemma&jbv=81028225",
+  "bild": "https://www.moviezine.se/wp-content/uploads/2025/02/large_5cd862ef26e00620c358de9748a9477b-scrooge_20fix.jpg",
+  "teaser_text": "Den snåle Ebenezer Scrooge får en chans att se sitt liv med nya ögon när han möter tre julandar. En berättelse om att förändras, visa omtanke och förstå vad som verkligen betyder något.",
+  "curiosity_questions": [
+    "Kan människor förändras, tror du?",
+    "Vad gör någon snäll på riktigt?",
+    "Vad tror du är viktigare än pengar?"
+  ]
 }
+
 ]
