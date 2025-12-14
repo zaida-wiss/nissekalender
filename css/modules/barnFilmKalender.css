@@ -1,3 +1,9 @@
+/* ======================================================
+   🎬 BARNFILM-KALENDER
+   Bygger på samma struktur som adventskalendern
+   ====================================================== */
+
+
 /* ====== FILMKALENDER-SEKTION ====== */
 .film-kalender {
   display: none;
@@ -83,9 +89,8 @@
 
 /* ====== MODAL CONTENT ====== */
 .film-kalender .advent-modal-content {
-  background: rgba(250, 249, 249, 0.852);
+  background: rgba(223, 51, 48, 0.539);
   margin-right: 50px;
-  color: var(--color-dark);
   border-radius: 12px;
   padding: 1.5rem;
   max-width: 280px;
@@ -102,13 +107,13 @@
 .film-kalender .advent-modal-content h2,
 .film-kalender .advent-modal-content h3,
 .film-kalender .advent-modal-content p {
-  /* color: #09000f; */
+  color: #0a0110;
 }
 
 /* Film-bild */
 .film-kalender .advent-modal-content img {
   width: 100%;
-  /* border-radius: 25px; */
+  border-radius: 8px;
   margin: 0.75rem 0;
 }
 
