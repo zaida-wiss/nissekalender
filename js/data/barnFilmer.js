@@ -128,5 +128,44 @@ export const barnFilmer =[
     "Hur känns det när någon väljer just dig?",
     "Vad tror du gör Oskar till en bra vän för Rasmus?"
   ]
+},
+{
+  "date": "2025-12-11",
+  "title": "Lotta 2 – Lotta flyttar hemifrån",
+  "duration_minutes": "1h 19 min",
+  "film": "https://www.tv4play.se/video/50b15181626951b769fb/lotta-2-lotta-flyttar-hemifran",
+  "bild": "https://m.media-amazon.com/images/M/MV5BN2JlZTgxM2ItNjNjNS00ODk1LThhODQtODZlZTNiYzVkMjU3XkEyXkFqcGc@._V1_.jpg",
+  "teaser_text": "Lotta är säker på en sak: hon kan själv. När hon flyttar hemifrån får hon snabbt upptäcka hur det känns att vara modig, ensam, envis – och ändå längta hem.",
+  "curiosity_questions": [
+    "Har du någon gång velat klara allt själv?",
+    "Hur känns det när man saknar någon?",
+    "Vad gör att hem känns som hemma?"
+  ]
+},
+{
+  "date": "2025-12-12",
+  "title": "Kan du vissla Johanna?",
+  "duration_minutes": "55min",
+  "film": "https://www.svtplay.se/video/jv4WgE8/kan-du-vissla-johanna",
+  "bild": "https://image.tmdb.org/t/p/w1280/h6wLjg39h2EAxqaI9CHJWwdHzvy.jpg",
+  "teaser_text": "Berra önskar sig en morfar. När han och Ulf hittar Nils känns det som om önskan går i uppfyllelse. En stillsam berättelse om vänskap, längtan och om att få vara viktig för någon.",
+  "curiosity_questions": [
+    "Vad betyder det att vara som en familj?",
+    "Hur kan man göra någon glad även om man inte är släkt?",
+    "Vad tror du Berra lär sig av Nils?"
+  ]
+},
+{
+  "date": "2025-12-13",
+  "title": "Familjen Claus",
+  "duration_minutes": "1h 37min",
+  "film": "https://www.netflix.com/watch/81316603?trackId=250061370&tctx=5%2C0%2C1cb9e376-f73f-4788-ad5e-94b9926904ba-85046528%2CNES_07FE04B85B8873F36A788A2C1DF641-988202C4380EC9-8A4E86E3CA_p_1765711735843%2C%2C%2C%2C%2C80199682%2CVideo%3A81316603%2CdetailsPageCollection",
+  "bild": "https://m.media-amazon.com/images/M/MV5BOTdkYTg1ZTQtZjFhNC00NDZjLWEwZGEtNWYxNDU0ZTQxZDlmXkEyXkFqcGc@._V1_.jpg",
+  "teaser_text": "Jules hatar julen – tills han upptäcker en stor familjehemlighet. Plötsligt dras han in i tomtarnas värld och måste lära sig vad ansvar, mod och omtanke egentligen betyder.",
+  "curiosity_questions": [
+    "Kan man ändra sig om något man inte tycker om?",
+    "Vad innebär det att ta ansvar för något viktigt?",
+    "Vad tror du är svårast med att vara tomte?"
+  ]
 }
 ]
