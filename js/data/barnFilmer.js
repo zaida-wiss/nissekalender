@@ -171,7 +171,7 @@ export const barnFilmer =[
 {
   "date": "2025-12-14",
   "title": "David och tomtenissarna",
-  "duration_minutes": 97,
+  "duration_minutes": "1h 46min",
   "film": "https://www.netflix.com/watch/81416534?trackId=284347283&tctx=7%2C15%2Cf66e8dee-a58c-4ce5-a71b-e2a88c40b3a5%2Cf66e8dee-a58c-4ce5-a71b-e2a88c40b3a5%7C%3DeyJwYWdlSWQiOiI3ZjU2ZmVjZC0xMWNmLTRmYjQtODAwNi1mZWQyYWRlMjdiYjcvMS8vZmFtaWxqZW4gY2xhdXMvMC8wIiwibG9jYWxTZWN0aW9uSWQiOiIyIn0%3D%2C%2C%2C%2CtitlesResults%2C81416534%2CVideo%3A81416534%2CminiDpPlayButton",
   "bild": "https://m.media-amazon.com/images/M/MV5BZDZiZTVlZjgtNGVjZC00NGVjLTgxNzUtNTgyMTQ2ODU4ZmVhXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
   "teaser_text": "David råkar snubbla in i tomtarnas hemliga värld och upptäcker att julen står på spel. Tillsammans med tomtenissarna måste han våga ta ansvar, samarbeta och tro på sig själv.",
@@ -184,7 +184,7 @@ export const barnFilmer =[
 {
   "date": "2025-12-15",
   "title": "Jakten på julen (A Boy Called Christmas)",
-  "duration_minutes": 60,
+  "duration_minutes": "1h47min",
   "film": "https://www.netflix.com/watch/81029733?trackId=284347283&tctx=3%2C17%2Cc8d4be67-c67a-4f5a-a248-3d6c84b29190%2Cc8d4be67-c67a-4f5a-a248-3d6c84b29190%7C%3DeyJwYWdlSWQiOiI3ZjU2ZmVjZC0xMWNmLTRmYjQtODAwNi1mZWQyYWRlMjdiYjcvMS8vYmFiZS8wLzAiLCJsb2NhbFNlY3Rpb25JZCI6IjIifQ%3D%3D%2C%2C%2C%2C%2C%2CVideo%3A81029733%2CdetailsPagePlayButton",
   "bild": "https://www.imdb.com/title/tt10187208/mediaviewer/rm3581472769/?ref_=tt_ov_i",
   "teaser_text": "Nikolas ger sig ut på ett modigt äventyr för att hitta sin pappa och upptäcker hur julen en gång började. En berättelse om hopp, vänlighet och att våga tro – även när allt känns mörkt.",
@@ -197,7 +197,7 @@ export const barnFilmer =[
 {
   "date": "2025-12-16",
   "title": "Scrooge – En julsaga",
-  "duration_minutes": 97,
+  "duration_minutes": "1h 41min",
   "film": "https://www.netflix.com/Kids/search?q=ensam%20hemma&jbv=81028225",
   "bild": "https://www.moviezine.se/wp-content/uploads/2025/02/large_5cd862ef26e00620c358de9748a9477b-scrooge_20fix.jpg",
   "teaser_text": "Den snåle Ebenezer Scrooge får en chans att se sitt liv med nya ögon när han möter tre julandar. En berättelse om att förändras, visa omtanke och förstå vad som verkligen betyder något.",
@@ -205,6 +205,32 @@ export const barnFilmer =[
     "Kan människor förändras, tror du?",
     "Vad gör någon snäll på riktigt?",
     "Vad tror du är viktigare än pengar?"
+  ]
+},
+{
+  "date": "2025-12-17",
+  "title": "Nils Karlsson Pyssling",
+  "duration_minutes": "1h 11min",
+  "film": "https://www.tv4play.se/video/4337be74cae9b0125456/nils-karlsson-pyssling",
+  "bild": "https://img-cdn.sfanytime.com/COVERM/COVERM_2911fadb-e0b7-4797-a7e1-f2d34c6f98c5_sv.jpg?ar=0.692&fit=crop&fm=pjpg&w=415&s=022dd4cdf82d6e156fb70f7cf0f43c5a",
+  "teaser_text": "Bertil känner sig ensam och osedd. När han möter Nils Karlsson Pyssling, som bor under golvet, uppstår en stillsam vänskap där omtanke, ansvar och fantasi får stort utrymme i det lilla.",
+  "curiosity_questions": [
+    "Hur känns det att vara ensam ibland?",
+    "Hur kan man ta hand om någon som är mindre än en själv?",
+    "Vad kan hända när man vågar bry sig om någon annan?"
+  ]
+},
+{
+  "date": "2025-12-18",
+  "title": "Madicken på Junibacken",
+  "duration_minutes": "1h 19 min",
+  "film": "https://www.tv4play.se/video/3ae521c21a40b118074d/madicken-pa-junibacken",
+  "bild": "https://img-cdn.sfanytime.com/COVERM/672650a4-55aa-421e-b82c-a54400b90c5c_COVERM_SV.jpg?ar=0.692&fit=crop&fm=pjpg&w=415&s=6d69d9ef3de392ebdf3cd7837b743946",
+  "teaser_text": "Madicken ser världen med öppna ögon och stort hjärta. På Junibacken händer både roliga och svåra saker, och Madicken försöker förstå rättvisa, mod och hur man är en bra människa – även när det inte är så enkelt.",
+  "curiosity_questions": [
+    "När tycker du att något känns orättvist?",
+    "Hur kan man vara modig på ett snällt sätt?",
+    "Vad gör Madicken till en bra vän?"
   ]
 }
 
